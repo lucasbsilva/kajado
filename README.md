@@ -1,4 +1,4 @@
-# Kajado 1.5
+# Biblioteca Kajado 1.5
 
 Cada projeto é único, todos com suas diferenças e similaridades, e a ideia do **Kajado** é dar a possibilidade de total personalização dos componentes, muito além das bibliotecas atuais, com o kajado você é quem cria os componentes que necessita.
 
