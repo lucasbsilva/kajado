@@ -1,6 +1,6 @@
 /* 
   Kajado - A Biblioteca dos Monges
-  Versão 1.2
+  Versão 1.5
   Documentação: http://kajado.github.io/doc
   Colabore no GitHub: https://github.com/Kajado
 */
@@ -123,11 +123,11 @@ input:focus, textarea:focus { outline: none; }
 
   .col1, .col2, .col3, .col4, .col5, .col6, 
   .col7,  .col8, .col9, .col10, .col11, .col12 {
-   	width: 100%;
+    width: 100%;
   }
   .col1-esp, .col2-esp, .col3-esp, .col4-esp, .col5-esp, .col6-esp,
   .col7-esp, .col8-esp, .col9-esp, .col10-esp, .col11-esp, .col12-esp {
-   	width: 98%; padding: 1%;
+    width: 98%; padding: 1%;
   }
 
 }
@@ -1965,45 +1965,125 @@ input:focus, textarea:focus { outline: none; }
 
 /* ======== Filtros de imagens */
 
+.img-pb-min {
+  -webkit-filter: grayscale(20%); 
+  filter: grayscale(20%); 
+}
 .img-pb {
+  -webkit-filter: grayscale(55%); 
+  filter: grayscale(55%); 
+}
+.img-pb-max {
   -webkit-filter: grayscale(100%); 
   filter: grayscale(100%); 
 }
+.img-sepia-min {
+  -webkit-filter: sepia(20%); 
+  filter: sepia(20%); 
+}
 .img-sepia {
+  -webkit-filter: sepia(55%); 
+  filter: sepia(55%); 
+}
+.img-sepia-max {
   -webkit-filter: sepia(100%); 
   filter: sepia(100%); 
+}
+.img-desf-min {
+  -webkit-filter: blur(1px); 
+  filter: blur(1px); 
 }
 .img-desf {
   -webkit-filter: blur(3px); 
   filter: blur(3px); 
 }
+.img-desf-max {
+  -webkit-filter: blur(8px); 
+  filter: blur(8px); 
+}
+.img-sat-min {
+  -webkit-filter: saturate(20%); 
+  filter: saturate(20%); 
+}
 .img-sat {
-  -webkit-filter: saturate(50%); 
-  filter: saturate(50%); 
+  -webkit-filter: saturate(55%); 
+  filter: saturate(55%); 
+}
+.img-sat-max {
+  -webkit-filter: saturate(100%); 
+  filter: saturate(100%); 
+}
+.img-neg-min {
+  -webkit-filter: invert(20%); 
+  filter: invert(20%); 
 }
 .img-neg {
+  -webkit-filter: invert(55%); 
+  filter: invert(55%); 
+}
+.img-neg-max {
   -webkit-filter: invert(100%); 
   filter: invert(100%); 
 }
 
 /* hover */
+.img-pb-min:hover {
+  -webkit-filter: grayscale(20%); 
+  filter: grayscale(20%); 
+}
 .img-pb:hover {
+  -webkit-filter: grayscale(55%); 
+  filter: grayscale(55%); 
+}
+.img-pb-max:hover {
   -webkit-filter: grayscale(100%); 
   filter: grayscale(100%); 
 }
+.img-sepia-min:hover {
+  -webkit-filter: sepia(20%); 
+  filter: sepia(20%); 
+}
 .img-sepia:hover {
+  -webkit-filter: sepia(55%); 
+  filter: sepia(55%); 
+}
+.img-sepia-max:hover {
   -webkit-filter: sepia(100%); 
   filter: sepia(100%); 
+}
+.img-desf-min:hover {
+  -webkit-filter: blur(1px); 
+  filter: blur(1px); 
 }
 .img-desf:hover {
   -webkit-filter: blur(3px); 
   filter: blur(3px); 
 }
+.img-desf-max:hover {
+  -webkit-filter: blur(8px); 
+  filter: blur(8px); 
+}
+.img-sat-min:hover {
+  -webkit-filter: saturate(20%); 
+  filter: saturate(20%); 
+}
 .img-sat:hover {
-  -webkit-filter: saturate(50%); 
-  filter: saturate(50%); 
+  -webkit-filter: saturate(55%); 
+  filter: saturate(55%); 
+}
+.img-sat-max:hover {
+  -webkit-filter: saturate(100%); 
+  filter: saturate(100%); 
+}
+.img-neg-min:hover {
+  -webkit-filter: invert(20%); 
+  filter: invert(20%); 
 }
 .img-neg:hover {
+  -webkit-filter: invert(55%); 
+  filter: invert(55%); 
+}
+.img-neg-max:hover {
   -webkit-filter: invert(100%); 
   filter: invert(100%); 
 }
