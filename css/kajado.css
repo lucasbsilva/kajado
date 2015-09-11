@@ -1,6 +1,6 @@
 /* 
   Kajado - A Biblioteca dos Monges
-  Versão 1.6
+  Versão 1.6.3
   Documentação: http://kajado.github.io/doc
   Colabore no GitHub: https://github.com/Kajado
 */
@@ -2012,6 +2012,28 @@ input:focus, textarea:focus { outline: none; }
 
 /* ======== Filtros de imagens */
 
+/* Efeito Cor */
+.img-efei-cor {
+  -webkit-filter: grayscale(90%);
+  filter: grayscale(90%);
+}
+.img-efei-cor:hover {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
+
+/* Efeito Desfoque */
+.img-efei-desf {
+  -webkit-filter: blur(2px); 
+  filter: blur(2px); 
+}
+.img-efei-desf:hover {
+  -webkit-filter: blur(0); 
+  filter: blur(0); 
+}
+
+
+/* Preto e Branco */
 .img-pb-min {
   -webkit-filter: grayscale(20%); 
   filter: grayscale(20%); 
@@ -2024,6 +2046,8 @@ input:focus, textarea:focus { outline: none; }
   -webkit-filter: grayscale(100%); 
   filter: grayscale(100%); 
 }
+
+/* Sépia */
 .img-sepia-min {
   -webkit-filter: sepia(20%); 
   filter: sepia(20%); 
@@ -2036,6 +2060,8 @@ input:focus, textarea:focus { outline: none; }
   -webkit-filter: sepia(100%); 
   filter: sepia(100%); 
 }
+
+/* Desfoque */
 .img-desf-min {
   -webkit-filter: blur(1px); 
   filter: blur(1px); 
@@ -2048,6 +2074,8 @@ input:focus, textarea:focus { outline: none; }
   -webkit-filter: blur(8px); 
   filter: blur(8px); 
 }
+
+/* Saturação */
 .img-sat-min {
   -webkit-filter: saturate(20%); 
   filter: saturate(20%); 
@@ -2060,6 +2088,8 @@ input:focus, textarea:focus { outline: none; }
   -webkit-filter: saturate(100%); 
   filter: saturate(100%); 
 }
+
+/* Negativo */
 .img-neg-min {
   -webkit-filter: invert(20%); 
   filter: invert(20%); 
@@ -2073,7 +2103,9 @@ input:focus, textarea:focus { outline: none; }
   filter: invert(100%); 
 }
 
-/* hover */
+/* ---- hover */
+
+/* Preto e Branco */
 .img-pb-min-hover:hover {
   -webkit-filter: grayscale(20%); 
   filter: grayscale(20%); 
@@ -2086,6 +2118,8 @@ input:focus, textarea:focus { outline: none; }
   -webkit-filter: grayscale(100%); 
   filter: grayscale(100%); 
 }
+
+/* Sépia */
 .img-sepia-min-hover:hover {
   -webkit-filter: sepia(20%); 
   filter: sepia(20%); 
@@ -2098,6 +2132,8 @@ input:focus, textarea:focus { outline: none; }
   -webkit-filter: sepia(100%); 
   filter: sepia(100%); 
 }
+
+/* Desfoque */
 .img-desf-min-hover:hover {
   -webkit-filter: blur(1px); 
   filter: blur(1px); 
@@ -2110,6 +2146,8 @@ input:focus, textarea:focus { outline: none; }
   -webkit-filter: blur(8px); 
   filter: blur(8px); 
 }
+
+/* Saturação */
 .img-sat-min-hover:hover {
   -webkit-filter: saturate(20%); 
   filter: saturate(20%); 
@@ -2122,6 +2160,8 @@ input:focus, textarea:focus { outline: none; }
   -webkit-filter: saturate(100%); 
   filter: saturate(100%); 
 }
+
+/* Negativo */
 .img-neg-min-hover:hover {
   -webkit-filter: invert(20%); 
   filter: invert(20%); 
