@@ -5,7 +5,7 @@ Cada projeto é único, todos com suas diferenças e similaridades, e a ideia do
 Estilo Fluente
 -----------------
 
-Utilizando o conceito de estilo fluente, voce carrega apenas o css que realmente vai usar, e isso evita importar uma folha de estilo enorme por causa de apenas um estilo, Alem de deixar sua folha de estilo muito mais descritivel, personalizada e reutilizavel
+Utilizando o conceito de estilo fluente, você carrega apenas o css que realmente vai usar, isso evita importar uma folha de estilo enorme por causa de apenas um estilo, Alem de deixar sua folha de estilo muito mais descritivel, personalizada e reutilizavel
 
 Sem Estilo fluente
 ```css
@@ -17,24 +17,23 @@ Sem Estilo fluente
     </style>
 
     <div class="component">
+        Olá Mundo
     </div>
 ```
 
 Com Estilo fluente
 ```css
     <style>
-        .text-center {
-            text-align: center;
-        }
-        
-        .font-size-14 {
-            font-size: 14px;
-        }
+        .f-cen { text-align: center; }
+        .f-14 { font-size: 14px; }
     </style>
 
-    <div class="text-center font-size-14">
+    <div class="f-cen f-14">
+        Olá Mundo
     </div>
 ```
+
+***OBS: "f-" é o parametro do Kajado para formatação de Textos*** 
 
 
 Iniciando
