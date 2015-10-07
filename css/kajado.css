@@ -1,6 +1,6 @@
 /* 
   Kajado - A Biblioteca dos Monges
-  Versão 1.6.5
+  Versão 1.6.8
   Documentação: http://kajado.github.io/doc
   Colabore no GitHub: https://github.com/Kajado
 */
@@ -42,7 +42,9 @@ img[src*="maps.gstatic.com"],img[src*="googleapis.com"] { max-width: none; }
 img, picture, video, embed { max-width: 100%; }
 input:focus, textarea:focus { outline: none; }
 
-/* Kajado Estrutura */
+/* 
+  Kajado Estrutura 
+*/
 
 .area-min {
   width: 96%;
@@ -78,6 +80,7 @@ input:focus, textarea:focus { outline: none; }
 .exib, .apar { display: block !important; }
 
 /* ======== Grades */
+
 .grade {
   width: 100%;
   position: relative;
@@ -89,6 +92,7 @@ input:focus, textarea:focus { outline: none; }
 .grade:after { clear:both; }
 
 /*  COL  */
+
 .grade div[class*="col"] { display: inline; float:left; vertical-align:middle; }
 
 .col12 { width: 100%; }
@@ -290,8 +294,8 @@ input:focus, textarea:focus { outline: none; }
 .alt-tam100 { height: 100%; }
 .alt-tam100-esp { height: 98%; padding: 1%; }
 
-
 /*  FIX */
+
 .grade div[class*="fix"] { display: inline; float:left; vertical-align:middle; }
 
 /* fix10 ~ fix90 */
@@ -415,7 +419,6 @@ input:focus, textarea:focus { outline: none; }
 .fix1050 { width: 1050px; }
 .fix1050-esp { width: 1034px; padding: 8px; }
 
-
 /* ======== Altura */
 
 /* alt-fix10 ~ alt-fix90 */
@@ -536,10 +539,12 @@ input:focus, textarea:focus { outline: none; }
 .alt-fix1050 { height: 1050px; }
 .alt-fix1050-esp { height: 1034px; padding: 8px; }
 
-/* Kajado Formatação
+/*
+  Kajado Formatação
 */
 
 /* ======== Nao Exibir na Impressao */
+
 @media print {  .no-impr { display: none; } }
 
 /* ======== Padding */
@@ -660,8 +665,8 @@ input:focus, textarea:focus { outline: none; }
 .esp-dir-95 { padding-right: 95px; }
 .esp-dir-100 { padding-right: 100px; }
 
-
 /* ======== Margin */
+
 .mar-min { margin: 19px; }
 .mar { margin: 38px; }
 .mar-max { margin: 78px; }
@@ -783,7 +788,6 @@ input:focus, textarea:focus { outline: none; }
 .mar-dir-90 { margin-right: 90px; }
 .mar-dir-95 { margin-right: 95px; }
 .mar-dir-100 { margin-right: 100px; }
-
 
 /* ======== Bordas */
 
@@ -1033,7 +1037,6 @@ input:focus, textarea:focus { outline: none; }
 /* Sem Borda */
 .bord-none { border: 0 !important; }
 
-
 /* ======== Fontes */
 
 /* Family */
@@ -1119,6 +1122,14 @@ input:focus, textarea:focus { outline: none; }
 .f-none-hover:hover { text-decoration: none; }
 .f-sub { text-decoration: underline !important; }
 .f-sub-hover:hover { text-decoration: underline; }
+
+/* Efeito de Sombra nos Textos */
+.f-sombra-min { text-shadow: 0px 1px 12px #ddd; }
+.f-sombra { text-shadow: 0px 1px 17px #ddd; }
+.f-sombra-max { text-shadow: 0px 1px 21px #ddd; }
+.f-sombra-min-esc { text-shadow: 0px 1px 12px #444; }
+.f-sombra-esc { text-shadow: 0px 1px 17px #444; }
+.f-sombra-max-esc { text-shadow: 0px 1px 21px #444; }
 
 
 /* ======== Opacidade */
@@ -1317,15 +1328,6 @@ input:focus, textarea:focus { outline: none; }
   box-shadow: inset 0 0 27px #888;
 }
 
-.text-sombra-min { text-shadow: 0px 1px 12px #ddd; }
-.text-sombra { text-shadow: 0px 1px 17px #ddd; }
-.text-sombra-max { text-shadow: 0px 1px 21px #ddd; }
-
-.text-sombra-min-esc { text-shadow: 0px 1px 12px #444; }
-.text-sombra-esc { text-shadow: 0px 1px 17px #444; }
-.text-sombra-max-esc { text-shadow: 0px 1px 21px #444; }
-
-
 /* ======== Position */
 .p-fix { position: fixed; }
 .p-abs { position: absolute; }
@@ -1344,11 +1346,11 @@ input:focus, textarea:focus { outline: none; }
 .z-index { z-index: 99; }
 .z-index-max { z-index: 999; }
 
-
 /* ======== Cursor */
 .pointer { cursor: pointer !important; }
 
-/* Kajado Cores
+/* 
+  Kajado Cores
 */
 
 /* -- Branco -- */
@@ -1889,7 +1891,6 @@ input:focus, textarea:focus { outline: none; }
   box-shadow: 0px 0px 5px #8ac4eb;
 }
 
-
 /* ======== Textos */
 
 /* H1 */
@@ -1903,7 +1904,6 @@ input:focus, textarea:focus { outline: none; }
 /* H3 */
 .h3, .h3-bord { font-weight: 300; }
 .h3-bord { border-bottom: 1px solid #999; padding-bottom: 7px; }
-
 
 /* ======== Tabelas */
 
