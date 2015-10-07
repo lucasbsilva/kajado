@@ -1749,13 +1749,13 @@ input:focus, textarea:focus { outline: none; }
   opacity: 0.88;
   -moz-opacity: 0.88;
   filter: alpha(opacity=88);
-  -webkit-transition: all 0.3s linear;
-  -moz-transition: all 0.3s linear;
-  -o-transition: all 0.3s linear;
-  transition: all 0.3s linear;
+  -webkit-transition: all 0.1s linear;
+  -moz-transition: all 0.1s linear;
+  -o-transition: all 0.1s linear;
+  transition: all 0.1s linear;
 }
 .bto-hover:hover {
-    text-shadow: 0px 1px 21px #f1f1f1;
+  text-shadow: 0px 1px 21px #f1f1f1;
   opacity: 1;
   -moz-opacity: 1;
   filter: alpha(opacity=1);
