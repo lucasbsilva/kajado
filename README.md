@@ -2,6 +2,40 @@
 
 Cada projeto é único, todos com suas diferenças e similaridades, e a ideia do **Kajado** é dar a possibilidade de total personalização dos componentes, muito além das bibliotecas atuais, com o kajado você é quem cria os componentes que necessita.
 
+Estilo Fluente
+-----------------
+
+Utilizando o conceito de estilo fluente, voce carrega apenas o css que realmente vai usar, e isso evita importar uma folha de estilo enorme por causa de apenas um estilo, Alem de deixar sua folha de estilo muito mais descritivel, personalizada e reutilizavel
+
+Sem Estilo fluente
+```css
+    <style>
+        .component {
+            text-align: center;
+            font-size: 14px;
+        }
+    </style>
+
+    <div class="component">
+    </div>
+```
+
+Com Estilo fluente
+```css
+    <style>
+        .text-center {
+            text-align: center;
+        }
+        
+        .font-size-14 {
+            font-size: 14px;
+        }
+    </style>
+
+    <div class="text-center font-size-14">
+    </div>
+```
+
 
 Iniciando
 -----------------
