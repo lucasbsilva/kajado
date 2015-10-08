@@ -5,7 +5,7 @@ Cada projeto é único, todos com suas diferenças e similaridades, e a ideia do
 Estilo Fluente
 -----------------
 
-Utilizando o conceito de estilo fluente, você utiliza apenas o css que realmente vai precisar, isso permite que seus elementos sejam muito mais descritíveis e personalizáveis.
+Utilizando o conceito de estilo fluente, você usa apenas o css que realmente vai precisar, isso permite que seus elementos sejam muito mais descritíveis e personalizáveis.
 
 Sem Estilo fluente
 ```css
