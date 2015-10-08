@@ -21,8 +21,7 @@
   "support": {
     "issues": "https://github.com/kajado/kajado/issues"
   },
-  "license": "MIT"
-  },
+  "license": "MIT",
   "replace": {
     "Kajado": "self.version"
   }
