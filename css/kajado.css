@@ -1,11 +1,13 @@
 /* 
   Kajado - A Biblioteca dos Monges
-  Versão 1.6.8
+  Versão 1.7
   Documentação: http://kajado.github.io/doc
   Colabore no GitHub: https://github.com/Kajado
 */
 
-/* Kajado Reset */
+/* 
+  Kajado Reset 
+*/
 
 body {
   margin: 0; 
@@ -1847,7 +1849,6 @@ input:focus, textarea:focus { outline: none; }
   -o-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
 }
-
 
 /* ======== Formularios */
 
