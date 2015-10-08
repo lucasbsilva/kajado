@@ -1,5 +1,5 @@
 {
-  "name": "kajado",
+  "name": "kajado/kajado",
   "description": "Biblioteca CSS modular open source",
   "keywords": [
     "css",
@@ -11,18 +11,15 @@
     "front-end",
     "web"
   ],
+  "license": "MIT",
+  "support": { "issues": "https://github.com/kajado/kajado/issues" },
   "homepage": "https://kajado.github.io",
   "authors": [
     {
       "name": "Gabriel Masson",
-      "email": "professorgmasson@gmail.com"
+      "email": "professorgmasson@gmail.com",
+      "homepage": "http://gmasson.com.br",
+      "role": "Developer"
     }
-  ],
-  "support": {
-    "issues": "https://github.com/kajado/kajado/issues"
-  },
-  "license": "MIT",
-  "replace": {
-    "Kajado": "self.version"
-  }
+  ]
 }
