@@ -1,11 +1,11 @@
-# Biblioteca Kajado 1.6
+# Biblioteca Kajado 1.7
 
 Cada projeto é único, todos com suas diferenças e similaridades, e a ideia do **Kajado** é dar a possibilidade de total personalização dos componentes, muito além das bibliotecas atuais, com o kajado você é quem cria os componentes que necessita.
 
 Estilo Fluente
 -----------------
 
-Utilizando o conceito de estilo fluente, você carrega apenas o css que realmente vai usar, isso evita importar uma folha de estilo enorme por causa de apenas um estilo, Alem de deixar sua folha de estilo muito mais descritivel, personalizada e reutilizavel
+Utilizando o conceito de estilo fluente, você utiliza apenas o css que realmente vai precisar, isso permite que seus elementos sejam muito mais descritíveis e personalizáveis.
 
 Sem Estilo fluente
 ```css
