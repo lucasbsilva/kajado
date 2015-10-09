@@ -1365,6 +1365,9 @@ input:focus, textarea:focus { outline: none; }
   Kajado Cores
 */
 
+/* -- Transparente -- */
+.transp { background: transparent; }
+
 /* -- Branco -- */
 .bran { background: #FFFFFF; color: #333; }
 .bran-hover:hover { background: #FFFFFF; color: #333; }
