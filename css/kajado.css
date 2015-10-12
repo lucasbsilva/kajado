@@ -1367,6 +1367,7 @@ input:focus, textarea:focus { outline: none; }
 
 /* -- Transparente -- */
 .transp { background: transparent; }
+.transp-hover:hover { background: transparent; }
 
 /* -- Branco -- */
 .bran { background: #FFFFFF; color: #333; }
