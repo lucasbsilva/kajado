@@ -1744,6 +1744,19 @@ input:focus, textarea:focus { outline: none; }
 
 /* Kajado Elementos */
 
+.texto-min {
+  font-size: 16px;
+  line-height: 21px;
+}
+.texto {
+  font-size: 18px;
+  line-height: 25px;
+}
+.texto-max {
+  font-size: 20px;
+  line-height: 29px;
+}
+
 /* ======== Elemento Seguindo o Scroll*/
 .flutua { position: absolute; }
 .flutuap {
