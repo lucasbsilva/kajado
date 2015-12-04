@@ -6,7 +6,7 @@ Utilizando o conceito de estilo fluente, você usa apenas o css que realmente va
 
 Sem Estilo fluente
 ```html
-    <div class="component">
+    <div class="componente">
         texto centralizado com fonte 14
     </div>
 ```
