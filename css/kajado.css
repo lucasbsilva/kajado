@@ -240,6 +240,15 @@ input:focus, textarea:focus { outline: none; }
 .area { width: 96%; max-width: 1180px; }
 .area-max { width: 96%; max-width: 2000px; }
 .area-100 { width: 96%; max-width: 100px; }
+.area-200 { width: 96%; max-width: 200px; }
+.area-300 { width: 96%; max-width: 300px; }
+.area-400 { width: 96%; max-width: 400px; }
+.area-500 { width: 96%; max-width: 500px; }
+.area-600 { width: 96%; max-width: 600px; }
+.area-700 { width: 96%; max-width: 700px; }
+.area-800 { width: 96%; max-width: 800px; }
+.area-900 { width: 96%; max-width: 900px; }
+.area-1000 { width: 96%; max-width: 1000px; }
 
 /* Exibição */
 .some, .ocul { display: none !important; }
