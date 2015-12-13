@@ -1,5 +1,5 @@
 /* 
-  Kajado - Versão 2.0
+  Kajado - Versão 2.0.3
   Documentação: http://kajado.github.io/doc
   Colabore no GitHub: https://github.com/Kajado
 */
@@ -72,16 +72,22 @@ input:focus, textarea:focus { outline: none; }
 }
 
 /* Inicio da animação */
-.anima-inic { -webkit-animation-delay: .50s; -ms-animation-delay: .50s; animation-delay: .50s; z-index: 10; }
-.anima-inic3 { -webkit-animation-delay: 3s; -ms-animation-delay: 3s; animation-delay: 3s; z-index: 15; }
-.anima-inic5 { -webkit-animation-delay: 5s; -ms-animation-delay: 5s; animation-delay: 5s; z-index: 20; }
-.anima-inic8 { -webkit-animation-delay: 8s; -ms-animation-delay: 8s; animation-delay: 8s; z-index: 25; }
-.anima-inic10 { -webkit-animation-delay: 10s; -ms-animation-delay: 10s; animation-delay: 10s; z-index: 30; }
-.anima-inic13 { -webkit-animation-delay: 13s; -ms-animation-delay: 13s; animation-delay: 13s; z-index: 35; }
-.anima-inic15 { -webkit-animation-delay: 15s; -ms-animation-delay: 15s; animation-delay: 15s; z-index: 40; }
-.anima-inic18 { -webkit-animation-delay: 18s; -ms-animation-delay: 18s; animation-delay: 18s; z-index: 45; }
-.anima-inic20 { -webkit-animation-delay: 20s; -ms-animation-delay: 20s; animation-delay: 20s; z-index: 50; }
-.anima-inic13 { -webkit-animation-delay: 13s; -ms-animation-delay: 13s; animation-delay: 13s; z-index: 55; }
+.anima-inic { -webkit-animation-delay: .50s; -ms-animation-delay: .50s; animation-delay: .50s; }
+.anima-inic1 { -webkit-animation-delay: 1s; -ms-animation-delay: 1s; animation-delay: 1s; }
+.anima-inic2 { -webkit-animation-delay: 2s; -ms-animation-delay: 2s; animation-delay: 2s; }
+.anima-inic3 { -webkit-animation-delay: 3s; -ms-animation-delay: 3s; animation-delay: 3s; }
+.anima-inic4 { -webkit-animation-delay: 4s; -ms-animation-delay: 4s; animation-delay: 4s; }
+.anima-inic5 { -webkit-animation-delay: 5s; -ms-animation-delay: 5s; animation-delay: 5s; }
+.anima-inic6 { -webkit-animation-delay: 6s; -ms-animation-delay: 6s; animation-delay: 6s; }
+.anima-inic7 { -webkit-animation-delay: 7s; -ms-animation-delay: 7s; animation-delay: 7s; }
+.anima-inic8 { -webkit-animation-delay: 8s; -ms-animation-delay: 8s; animation-delay: 8s; }
+.anima-inic9 { -webkit-animation-delay: 9s; -ms-animation-delay: 9s; animation-delay: 9s; }
+.anima-inic10 { -webkit-animation-delay: 10s; -ms-animation-delay: 10s; animation-delay: 10s; }
+.anima-inic13 { -webkit-animation-delay: 13s; -ms-animation-delay: 13s; animation-delay: 13s; }
+.anima-inic15 { -webkit-animation-delay: 15s; -ms-animation-delay: 15s; animation-delay: 15s; }
+.anima-inic18 { -webkit-animation-delay: 18s; -ms-animation-delay: 18s; animation-delay: 18s; }
+.anima-inic20 { -webkit-animation-delay: 20s; -ms-animation-delay: 20s; animation-delay: 20s; }
+.anima-inic21 { -webkit-animation-delay: 21s; -ms-animation-delay: 21s; animation-delay: 21s; }
 
 /* Efeito oculta */
 @keyframes oculta {
@@ -1089,6 +1095,51 @@ input:focus, textarea:focus { outline: none; }
 .f-72, .f-72-hover:hover { font-size: 72px; }
 .f-80, .f-80-hover:hover { font-size: 80px; }
 
+/* Altura de Linha */
+.f-alt6, .f-alt6-hover:hover { line-height: 6px; }
+.f-alt7, .f-alt7-hover:hover { line-height: 7px; }
+.f-alt8, .f-alt8-hover:hover { line-height: 8px; }
+.f-alt9, .f-alt9-hover:hover { line-height: 9px; }
+.f-alt10, .f-alt10-hover:hover { line-height: 10px; }
+.f-alt11, .f-alt11-hover:hover { line-height: 11px; }
+.f-alt12, .f-alt12-hover:hover { line-height: 12px; }
+.f-alt13, .f-alt13-hover:hover { line-height: 13px; }
+.f-alt14, .f-alt14-hover:hover { line-height: 14px; }
+.f-alt15, .f-alt15-hover:hover { line-height: 15px; }
+.f-alt16, .f-alt16-hover:hover { line-height: 16px; }
+.f-alt17, .f-alt17-hover:hover { line-height: 17px; }
+.f-alt18, .f-alt18-hover:hover { line-height: 18px; }
+.f-alt19, .f-alt19-hover:hover { line-height: 19px; }
+.f-alt20, .f-alt20-hover:hover { line-height: 20px; }
+.f-alt21, .f-alt21-hover:hover { line-height: 21px; }
+.f-alt22, .f-alt22-hover:hover { line-height: 22px; }
+.f-alt23, .f-alt23-hover:hover { line-height: 23px; }
+.f-alt24, .f-alt24-hover:hover { line-height: 24px; }
+.f-alt25, .f-alt25-hover:hover { line-height: 25px; }
+.f-alt26, .f-alt26-hover:hover { line-height: 26px; }
+.f-alt27, .f-alt27-hover:hover { line-height: 27px; }
+.f-alt28, .f-alt28-hover:hover { line-height: 28px; }
+.f-alt29, .f-alt29-hover:hover { line-height: 29px; }
+.f-alt30, .f-alt30-hover:hover { line-height: 30px; }
+.f-alt31, .f-alt31-hover:hover { line-height: 31px; }
+.f-alt32, .f-alt32-hover:hover { line-height: 32px; }
+.f-alt33, .f-alt33-hover:hover { line-height: 33px; }
+.f-alt34, .f-alt34-hover:hover { line-height: 34px; }
+.f-alt35, .f-alt35-hover:hover { line-height: 35px; }
+.f-alt36, .f-alt36-hover:hover { line-height: 36px; }
+.f-alt37, .f-alt37-hover:hover { line-height: 37px; }
+.f-alt38, .f-alt38-hover:hover { line-height: 38px; }
+.f-alt39, .f-alt39-hover:hover { line-height: 39px; }
+.f-alt40, .f-alt40-hover:hover { line-height: 40px; }
+.f-alt42, .f-alt42-hover:hover { line-height: 42px; }
+.f-alt44, .f-alt44-hover:hover { line-height: 44px; }
+.f-alt48, .f-alt48-hover:hover { line-height: 48px; }
+.f-alt54, .f-alt54-hover:hover { line-height: 54px; }
+.f-alt60, .f-alt60-hover:hover { line-height: 60px; }
+.f-alt72, .f-alt72-hover:hover { line-height: 72px; }
+.f-alt80, .f-alt80-hover:hover { line-height: 80px; }
+
+
 /* Estilo */
 .f-neg, .f-neg-hover:hover { font-weight: bold; }
 .f-ita, .f-ita-hover:hover { font-style: italic; }
@@ -1562,7 +1613,7 @@ input:focus, textarea:focus { outline: none; }
 */
 
 /* Botao */
-.bto, .bto-sombra {
+.bto {
   text-decoration: none;
   display: inline-block;
   box-sizing: border-box;
@@ -1570,7 +1621,7 @@ input:focus, textarea:focus { outline: none; }
   list-style-type: none;
   cursor: pointer;
 }
-.bto:hover, .bto-sombra:hover {
+.bto:hover {
   opacity: 0.88;
   -moz-opacity: 0.88;
   filter: alpha(opacity=88);
@@ -1591,11 +1642,11 @@ input:focus, textarea:focus { outline: none; }
   -moz-opacity: 0.50;
   filter: alpha(opacity=0.50);
 }
-.bto[class~=mobi] { width: 100%; }
-
+/* Botão X (para modal e alertas) */
 .bto-x-min,
 .bto-x,
 .bto-x-max {
+  text-decoration: none;
   float: right;
   font-weight: 300;
   cursor: pointer;
@@ -1604,11 +1655,6 @@ input:focus, textarea:focus { outline: none; }
 .bto-x-min { font-size: 14px; }
 .bto-x { font-size: 21px; }
 .bto-x-max { font-size: 38px; }
-.bto-sombra {
-  -moz-box-shadow: 1px 2px 3px #999;
-  -webkit-box-shadow: 1px 2px 3px #999;
-  box-shadow: 1px 2px 3px #999;
-}
 
 /* Modal */
 #fundomodal {
