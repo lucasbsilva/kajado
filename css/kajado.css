@@ -1,5 +1,5 @@
 /* 
-  Kajado - Versão 2.0.4
+  Kajado - Versão 2.0.5
   Documentação: http://kajado.github.io/doc
   Colabore no GitHub: https://github.com/Kajado
 */
@@ -22,13 +22,6 @@ hr {
   border-bottom:1px #ccc solid;
   -moz-box-sizing: content-box;
   box-sizing: content-box;
-}
-select { 
-  outline:none;
-  -webkit-appearance:none;
-  -moz-appearance:none;
-  appearance:none;
-  cursor:pointer;
 }
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
 caption, th, td { text-align: left; font-weight: normal; }
@@ -1721,21 +1714,15 @@ input:focus, textarea:focus { outline: none; }
 
 /* ======== Formularios */
 
-/* Input + Textarea */
-.input, .textarea {
+.input, .textarea, .select {
   vertical-align: middle;
-  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.075) inset;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.50) inset;
   -webkit-transition: 0.5s ease-out;
   -moz-transition: 0.5s ease-out;
   -o-transition: 0.5s ease-out;
   transition: 0.5s ease-out;
 }
-.input:hover, .textarea:hover {
-  -moz-box-shadow: 0px 0px 2px #999999;
-  -webkit-box-shadow: 0px 0px 2px #999999;
-  box-shadow: 0px 0px 2px #999999;
-}
-.input:focus, .textarea:focus {
+.input:focus, .textarea:focus, .select:focus {
   -moz-box-shadow: 0px 0px 5px #8ac4eb;
   -webkit-box-shadow: 0px 0px 5px #8ac4eb;
   box-shadow: 0px 0px 5px #8ac4eb;
@@ -1743,6 +1730,12 @@ input:focus, textarea:focus { outline: none; }
   -moz-transition: 0.5s ease-in;
   -o-transition: 0.5s ease-in;
   transition: 0.5s ease-in;
+}
+.select { 
+  outline:none;
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  appearance:none;
 }
 
 /* ======== Background */
@@ -1802,19 +1795,19 @@ input:focus, textarea:focus { outline: none; }
 /* ======== Tabelas */
 
 /* Padrao */
-.tabela {
+.tabela, .tabela-noesp {
   margin: 1px;
   width: 100%;
   border-collapse: collapse;
 }
-.tabela thead {
+.tabela thead, .tabela-noesp thead {
   border-top: 1px solid #999;
   border-bottom: 1px solid #999;
   border-left: 0; border-right: 0;
   background: #ddd;
   margin: 0;
 }
-.tabela tbody { margin: 0; }
+.tabela tbody, .tabela-noesp tbody { margin: 0; }
 .tabela td {
   margin: 0;
   padding: 8px;
@@ -1823,41 +1816,28 @@ input:focus, textarea:focus { outline: none; }
   -o-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
-.tabela tbody td { border-bottom: 1px solid #ccc; }
-.tabela tbody tr {
+.tabela tbody td, .tabela-noesp tbody td { border-bottom: 1px solid #ccc; }
+.tabela tbody tr, .tabela-noesp tbody tr {
   -webkit-transition: all 0.3s linear;
   -moz-transition: all 0.3s linear;
   -o-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
-.tabela[class~=lista] tbody tr:nth-child(2n+1) { background-color: #f5f5f5; }
-.tabela[class~=lista] tbody tr:nth-child(2n+1):hover { background-color: #ddd; }
-.tabela tbody tr:hover {
+.tabela[class~=tabela-lista] tbody tr:nth-child(2n+1) { background-color: #f5f5f5; }
+.tabela[class~=tabela-lista] tbody tr:nth-child(2n+1):hover { background-color: #ddd; }
+.tabela tbody tr:hover, .tabela-noesp tbody tr:hover {
   background: #ddd;
   -webkit-transition: all 0.3s linear;
   -moz-transition: all 0.3s linear;
   -o-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
-.tabela[class~=bord] td {
+.tabela[class~=tabela-bord] td, .tabela-noesp[class~=tabela-bord] td {
   border-left: 1px solid #999;
   border-right: 1px solid #999;
 }
 
 /* Sem Espaçamento */
-.tabela-noesp {
-  margin: 1px;
-  width: 100%;
-  border-collapse: collapse;
-}
-.tabela-noesp thead {
-  border-top: 1px solid #999;
-  border-bottom: 1px solid #999;
-  border-left: 0; border-right: 0;
-  background: #ddd;
-  margin: 0;
-}
-.tabela-noesp tbody { margin: 0; }
 .tabela-noesp td {
   margin: 0;
   padding: 4px 8px;
@@ -1866,26 +1846,8 @@ input:focus, textarea:focus { outline: none; }
   -o-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
-.tabela-noesp tbody td { border-bottom: 1px solid #ccc; }
-.tabela-noesp tbody tr {
-  -webkit-transition: all 0.3s linear;
-  -moz-transition: all 0.3s linear;
-  -o-transition: all 0.3s linear;
-  transition: all 0.3s linear;
-}
-.tabela-noesp[class~=lista] tbody tr:nth-child(2n+1) { background-color: #f5f5f5; }
-.tabela-noesp[class~=lista] tbody tr:nth-child(2n+1):hover { background-color: #ddd; }
-.tabela-noesp tbody tr:hover {
-  background: #ddd;
-  -webkit-transition: all 0.3s linear;
-  -moz-transition: all 0.3s linear;
-  -o-transition: all 0.3s linear;
-  transition: all 0.3s linear;
-}
-.tabela-noesp[class~=bord] td {
-  border-left: 1px solid #999;
-  border-right: 1px solid #999;
-}
+.tabela-noesp[class~=tabela-lista] tbody tr:nth-child(2n+1) { background-color: #f5f5f5; }
+.tabela-noesp[class~=tabela-lista] tbody tr:nth-child(2n+1):hover { background-color: #ddd; }
 
 /* ======== Filtros e efeitos de imagens */
 
@@ -1900,71 +1862,71 @@ input:focus, textarea:focus { outline: none; }
 }
 
 /* Preto e Branco */
-.img-pb-min .img-pb-min-hover:hover {
+.img-pb-min, .img-pb-min-hover:hover {
   -webkit-filter: grayscale(20%); 
   filter: grayscale(20%); 
 }
-.img-pb .img-pb-hover:hover {
+.img-pb, .img-pb-hover:hover {
   -webkit-filter: grayscale(55%); 
   filter: grayscale(55%); 
 }
-.img-pb-max .img-pb-max-hover:hover {
+.img-pb-max, .img-pb-max-hover:hover {
   -webkit-filter: grayscale(100%); 
   filter: grayscale(100%); 
 }
 
 /* Sépia */
-.img-sepia-min .img-sepia-min-hover:hover {
+.img-sepia-min, .img-sepia-min-hover:hover {
   -webkit-filter: sepia(20%); 
   filter: sepia(20%); 
 }
-.img-sepia .img-sepia-hover:hover {
+.img-sepia, .img-sepia-hover:hover {
   -webkit-filter: sepia(55%); 
   filter: sepia(55%); 
 }
-.img-sepia-max .img-sepia-max-hover:hover {
+.img-sepia-max, .img-sepia-max-hover:hover {
   -webkit-filter: sepia(100%); 
   filter: sepia(100%); 
 }
 
 /* Desfoque */
-.img-desf-min .img-desf-min-hover:hover {
+.img-desf-min, .img-desf-min-hover:hover {
   -webkit-filter: blur(1px); 
   filter: blur(1px); 
 }
-.img-desf .img-desf-hover:hover {
+.img-desf, .img-desf-hover:hover {
   -webkit-filter: blur(3px); 
   filter: blur(3px); 
 }
-.img-desf-max .img-desf-max-hover:hover {
+.img-desf-max, .img-desf-max-hover:hover {
   -webkit-filter: blur(8px); 
   filter: blur(8px); 
 }
 
 /* Saturação */
-.img-sat-min .img-sat-min-hover:hover {
+.img-sat-min, .img-sat-min-hover:hover {
   -webkit-filter: saturate(20%); 
   filter: saturate(20%); 
 }
-.img-sat .img-sat-hover:hover {
+.img-sat, .img-sat-hover:hover {
   -webkit-filter: saturate(55%); 
   filter: saturate(55%); 
 }
-.img-sat-max .img-sat-max-hover:hover {
+.img-sat-max, .img-sat-max-hover:hover {
   -webkit-filter: saturate(100%); 
   filter: saturate(100%); 
 }
 
 /* Negativo */
-.img-neg-min .img-neg-min-hover:hover {
+.img-neg-min, .img-neg-min-hover:hover {
   -webkit-filter: invert(20%); 
   filter: invert(20%); 
 }
-.img-neg .img-neg-hover:hover {
+.img-neg, .img-neg-hover:hover {
   -webkit-filter: invert(55%); 
   filter: invert(55%); 
 }
-.img-neg-max .img-neg-max-hover:hover {
+.img-neg-max, .img-neg-max-hover:hover {
   -webkit-filter: invert(100%); 
   filter: invert(100%); 
 }
