@@ -1,0 +1,262 @@
+/* Botao */
+.bto {
+  text-decoration: none;
+  display: inline-block;
+  box-sizing: border-box;
+  font-family: Helvetica, Arial, sans-serif;
+  list-style-type: none;
+  cursor: pointer;
+}
+.bto:hover {
+  opacity: 0.88;
+  -moz-opacity: 0.88;
+  filter: alpha(opacity=88);
+  -webkit-transition: all 0.1s linear;
+  -moz-transition: all 0.1s linear;
+  -o-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+.bto-hover:hover {
+  text-shadow: 0px 1px 21px #f1f1f1;
+  opacity: 1;
+  -moz-opacity: 1;
+  filter: alpha(opacity=1);
+}
+.bto[class~=desab] {
+  cursor: no-drop !important;
+  opacity: 0.50;
+  -moz-opacity: 0.50;
+  filter: alpha(opacity=0.50);
+}
+
+/* Botão X (para modal e alertas) */
+.bto-x-min,
+.bto-x,
+.bto-x-max {
+  text-decoration: none;
+  float: right;
+  font-weight: 300;
+  cursor: pointer;
+  margin-left: 21px;
+}
+.bto-x-min { font-size: 14px; }
+.bto-x { font-size: 21px; }
+.bto-x-max { font-size: 38px; }
+
+/* Modal */
+#fundomodal {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  position: fixed;
+  z-index: 998;
+  display: none;
+  background:rgba(0,0,0,0.7);
+}
+#modal {
+  width: 100%;
+  max-height:80%;
+  overflow:auto;
+  padding:4% 0;
+  margin: 9% 0;
+  position: fixed;
+  z-index: 999;
+  background:#fff;
+  display: none;
+}
+
+/* Alertas */
+#alerta {
+  width: 98%;
+  padding: 1.5% 1%;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  animation-name: exibe;
+  animation-duration: 0.9s;
+  animation-fill-mode: both;
+}
+#alerta-esq, #alerta-dir {
+  min-width: 121px;
+  padding: 17px 19px;
+  position: fixed;
+  bottom: 21px;
+  z-index: 999;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  animation-name: exibe;
+  animation-duration: 0.9s;
+  animation-fill-mode: both;
+}
+#alerta-esq { left: 19px; }
+#alerta-dir { right: 19px; }
+
+/* Lista <li> */
+.lista-limp { list-style-type: none; }
+.lista-disc { list-style-type: disc; }
+.lista-circ { list-style-type: circle; }
+.lista-quad { list-style-type: square; }
+
+/* Lista <ol> */
+.lista-deci { list-style-type: decimal; }
+.lista-roma { list-style-type: upper-roman; }
+.lista-letr { list-style-type: upper-alpha; }
+
+.input, .textarea, .select {
+  border: 1px solid #c9c9c9;
+  padding: 10px 17px;
+  vertical-align: middle;
+  -webkit-transition: 0.5s ease-out;
+  -moz-transition: 0.5s ease-out;
+  -o-transition: 0.5s ease-out;
+  transition: 0.5s ease-out;
+}
+.input:focus, .textarea:focus {
+  border: 1px solid #ddd;
+  -moz-box-shadow: 0px 0px 7px #8ac4eb;
+  -webkit-box-shadow: 0px 0px 7px #8ac4eb;
+  box-shadow: 0px 0px 7px #8ac4eb;
+  -webkit-transition: 0.5s ease-in;
+  -moz-transition: 0.5s ease-in;
+  -o-transition: 0.5s ease-in;
+  transition: 0.5s ease-in;
+}
+
+/* Background com Video */
+.fundo-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1000;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Background com Imagem */
+.fundo-img {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; 
+}
+
+/* Pré formatação para textos */
+.texto-min {
+  font-size: 15px;
+  line-height: 21px;
+  text-align: justify;
+}
+.texto {
+  font-size: 18px;
+  line-height: 26px;
+  text-align: justify;
+}
+.texto-max {
+  font-size: 23px;
+  line-height: 34px;
+  text-align: justify;
+}
+
+/* H1 */
+.h1, .h1-bord { font-weight: 300; }
+.h1-bord { border-bottom: 1px solid #999; padding-bottom: 7px; }
+
+/* H2 */
+.h2, .h2-bord { font-weight: 300; }
+.h2-bord { border-bottom: 1px solid #999; padding-bottom: 6px; }
+
+/* H3 */
+.h3, .h3-bord { font-weight: 300; }
+.h3-bord { border-bottom: 1px solid #999; padding-bottom: 5px; }
+
+/* Padrao */
+.tabela, .tabela-noesp {
+  margin: 1px;
+  width: 100%;
+  border-collapse: collapse;
+}
+.tabela thead, .tabela-noesp thead {
+  border-top: 1px solid #999;
+  border-bottom: 1px solid #999;
+  border-left: 0; border-right: 0;
+  background: #ddd;
+  margin: 0;
+}
+.tabela tbody, .tabela-noesp tbody { margin: 0; }
+.tabela td {
+  margin: 0;
+  padding: 8px;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+.tabela tbody td, .tabela-noesp tbody td { border-bottom: 1px solid #ccc; }
+.tabela tbody tr, .tabela-noesp tbody tr {
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+.tabela[class~=tabela-lista] tbody tr:nth-child(2n+1) { background-color: #f5f5f5; }
+.tabela[class~=tabela-lista] tbody tr:nth-child(2n+1):hover { background-color: #ddd; }
+.tabela tbody tr:hover, .tabela-noesp tbody tr:hover {
+  background: #ddd;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+.tabela[class~=tabela-bord] td, .tabela-noesp[class~=tabela-bord] td {
+  border-left: 1px solid #999;
+  border-right: 1px solid #999;
+}
+
+/* Sem Espaçamento */
+.tabela-noesp td {
+  margin: 0;
+  padding: 4px 8px;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+.tabela-noesp[class~=tabela-lista] tbody tr:nth-child(2n+1) { background-color: #f5f5f5; }
+.tabela-noesp[class~=tabela-lista] tbody tr:nth-child(2n+1):hover { background-color: #ddd; }
+
+/* Cartão */
+.cartao, .cartao-s {
+  padding: 14px;
+  background: #fff;
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-bottom: 2px solid #ccc;
+}
+/* Cartão com Sombra */
+.cartao-s {
+  -moz-box-shadow: 0 0 3px #ccc;
+  -webkit-box-shadow: 0 0 3px #ccc;
+  box-shadow: 0 0 3px #ccc;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.cartao-s:hover {
+  -moz-box-shadow: 0 0 16px #ccc;
+  -webkit-box-shadow: 0 0 16px #ccc;
+  box-shadow: 0 0 16px #ccc;
+}
