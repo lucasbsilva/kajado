@@ -1,12 +1,12 @@
 /* Botao */
-.bto {
+.bto, .bto-d {
   text-decoration: none;
   display: inline-block;
   box-sizing: border-box;
-  font-family: Helvetica, Arial, sans-serif;
   list-style-type: none;
   cursor: pointer;
 }
+.bto { cursor: pointer; }
 .bto:hover {
   opacity: 0.88;
   -moz-opacity: 0.88;
@@ -22,8 +22,8 @@
   -moz-opacity: 1;
   filter: alpha(opacity=1);
 }
-.bto[class~=desab] {
-  cursor: no-drop !important;
+.bto-d {
+  cursor: no-drop;
   opacity: 0.50;
   -moz-opacity: 0.50;
   filter: alpha(opacity=0.50);
@@ -44,29 +44,31 @@
 .bto-x-max { font-size: 38px; }
 
 /* Modal */
-#fundomodal {
+.fundo-modal {
   width: 100%;
-  height: 100%;
-  margin: 0;
   position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
   z-index: 998;
   display: none;
-  background:rgba(0,0,0,0.7);
+  background: rgba(0,0,0,0.7);
 }
-#modal {
+.modal {
   width: 100%;
-  max-height:80%;
+  max-height: 80%;
   overflow:auto;
-  padding:4% 0;
+  padding: 4% 0;
   margin: 9% 0;
   position: fixed;
   z-index: 999;
-  background:#fff;
+  background: #fff;
   display: none;
 }
 
 /* Alertas */
-#alerta {
+.alerta {
   width: 98%;
   padding: 1.5% 1%;
   text-align: center;
@@ -83,7 +85,7 @@
   animation-duration: 0.9s;
   animation-fill-mode: both;
 }
-#alerta-esq, #alerta-dir {
+.alerta-esq, .alerta-dir {
   min-width: 121px;
   padding: 17px 19px;
   position: fixed;
@@ -97,8 +99,8 @@
   animation-duration: 0.9s;
   animation-fill-mode: both;
 }
-#alerta-esq { left: 19px; }
-#alerta-dir { right: 19px; }
+.alerta-esq { left: 19px; }
+.alerta-dir { right: 19px; }
 
 /* Lista <li> */
 .lista-limp { list-style-type: none; }
@@ -169,16 +171,9 @@
   text-align: justify;
 }
 
-/* H1 */
-.h1, .h1-bord { font-weight: 300; }
+.h1, .h1-bord, .h2, .h2-bord, .h3, .h3-bord  { font-weight: 300; }
 .h1-bord { border-bottom: 1px solid #999; padding-bottom: 7px; }
-
-/* H2 */
-.h2, .h2-bord { font-weight: 300; }
 .h2-bord { border-bottom: 1px solid #999; padding-bottom: 6px; }
-
-/* H3 */
-.h3, .h3-bord { font-weight: 300; }
 .h3-bord { border-bottom: 1px solid #999; padding-bottom: 5px; }
 
 /* Padrao */
@@ -259,4 +254,14 @@
   -moz-box-shadow: 0 0 16px #ccc;
   -webkit-box-shadow: 0 0 16px #ccc;
   box-shadow: 0 0 16px #ccc;
+}
+
+/* Bloco */
+.bloco {
+  padding: 14px;
+  background: #eee;
+  border-top: 1px solid #ccc;
+  border-left: 5px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
 }
