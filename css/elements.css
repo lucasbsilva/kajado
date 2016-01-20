@@ -1,12 +1,35 @@
-/* Botao */
-.bto, .bto-d {
+@media print { .no-impr { display: none; } }
+
+header.fix {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+footer.fix {
+  position: fixed;
+  z-index: 999;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.desabled, .desab {
+  cursor: no-drop;
+  opacity: 0.50;
+  -moz-opacity: 0.50;
+  filter: alpha(opacity=0.50);
+}
+
+.bto {
   text-decoration: none;
   display: inline-block;
   box-sizing: border-box;
   list-style-type: none;
   cursor: pointer;
 }
-.bto { cursor: pointer; }
 .bto:hover {
   opacity: 0.88;
   -moz-opacity: 0.88;
@@ -22,29 +45,19 @@
   -moz-opacity: 1;
   filter: alpha(opacity=1);
 }
-.bto-d {
-  cursor: no-drop;
-  opacity: 0.50;
-  -moz-opacity: 0.50;
-  filter: alpha(opacity=0.50);
-}
 
-/* Botão X (para modal e alertas) */
-.bto-x-min,
-.bto-x,
-.bto-x-max {
+.x-min, .x, .x-max {
   text-decoration: none;
   float: right;
   font-weight: 300;
   cursor: pointer;
   margin-left: 21px;
 }
-.bto-x-min { font-size: 14px; }
-.bto-x { font-size: 21px; }
-.bto-x-max { font-size: 38px; }
+.x-min { font-size: 14px; }
+.x { font-size: 21px; }
+.x-max { font-size: 38px; }
 
-/* Modal */
-.fundo-modal {
+.bg-modal {
   width: 100%;
   position: fixed;
   top: 0;
@@ -67,8 +80,7 @@
   display: none;
 }
 
-/* Alertas */
-.alerta {
+.alert {
   width: 98%;
   padding: 1.5% 1%;
   text-align: center;
@@ -85,7 +97,7 @@
   animation-duration: 0.9s;
   animation-fill-mode: both;
 }
-.alerta-esq, .alerta-dir {
+.alert-left, .alert-right {
   min-width: 121px;
   padding: 17px 19px;
   position: fixed;
@@ -99,19 +111,17 @@
   animation-duration: 0.9s;
   animation-fill-mode: both;
 }
-.alerta-esq { left: 19px; }
-.alerta-dir { right: 19px; }
+.alert-left { left: 19px; }
+.alert-right { right: 19px; }
 
-/* Lista <li> */
-.lista-limp { list-style-type: none; }
-.lista-disc { list-style-type: disc; }
-.lista-circ { list-style-type: circle; }
-.lista-quad { list-style-type: square; }
+.list-none { list-style-type: none; }
+.list-disc { list-style-type: disc; }
+.list-circ { list-style-type: circle; }
+.list-squa { list-style-type: square; }
 
-/* Lista <ol> */
-.lista-deci { list-style-type: decimal; }
-.lista-roma { list-style-type: upper-roman; }
-.lista-letr { list-style-type: upper-alpha; }
+.list-deci { list-style-type: decimal; }
+.list-roma { list-style-type: upper-roman; }
+.list-alph { list-style-type: upper-alpha; }
 
 .input, .textarea, .select {
   border: 1px solid #c9c9c9;
@@ -123,7 +133,7 @@
   transition: 0.5s ease-out;
 }
 .input:focus, .textarea:focus {
-  border: 1px solid #ddd;
+  border: 1px solid #ccc;
   -moz-box-shadow: 0px 0px 7px #8ac4eb;
   -webkit-box-shadow: 0px 0px 7px #8ac4eb;
   box-shadow: 0px 0px 7px #8ac4eb;
@@ -133,8 +143,7 @@
   transition: 0.5s ease-in;
 }
 
-/* Background com Video */
-.fundo-video {
+.bg-movie {
   position: fixed;
   right: 0;
   bottom: 0;
@@ -147,25 +156,23 @@
   background-size: cover;
 }
 
-/* Background com Imagem */
-.fundo-img {
+.bg-img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover; 
 }
 
-/* Pré formatação para textos */
-.texto-min {
+.text-min {
   font-size: 15px;
   line-height: 21px;
   text-align: justify;
 }
-.texto {
+.text {
   font-size: 18px;
   line-height: 26px;
   text-align: justify;
 }
-.texto-max {
+.text-max {
   font-size: 23px;
   line-height: 34px;
   text-align: justify;
@@ -176,21 +183,20 @@
 .h2-bord { border-bottom: 1px solid #999; padding-bottom: 6px; }
 .h3-bord { border-bottom: 1px solid #999; padding-bottom: 5px; }
 
-/* Padrao */
-.tabela, .tabela-noesp {
+.table, .table-nopad {
   margin: 1px;
   width: 100%;
   border-collapse: collapse;
 }
-.tabela thead, .tabela-noesp thead {
+.table thead, .table-nopad thead {
   border-top: 1px solid #999;
   border-bottom: 1px solid #999;
   border-left: 0; border-right: 0;
   background: #ddd;
   margin: 0;
 }
-.tabela tbody, .tabela-noesp tbody { margin: 0; }
-.tabela td {
+.table tbody, .table-nopad tbody { margin: 0; }
+.table td {
   margin: 0;
   padding: 8px;
   -webkit-transition: all 0.3s linear;
@@ -198,29 +204,28 @@
   -o-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
-.tabela tbody td, .tabela-noesp tbody td { border-bottom: 1px solid #ccc; }
-.tabela tbody tr, .tabela-noesp tbody tr {
+.table tbody td, .table-nopad tbody td { border-bottom: 1px solid #ccc; }
+.table tbody tr, .table-nopad tbody tr {
   -webkit-transition: all 0.3s linear;
   -moz-transition: all 0.3s linear;
   -o-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
-.tabela[class~=tabela-lista] tbody tr:nth-child(2n+1) { background-color: #f5f5f5; }
-.tabela[class~=tabela-lista] tbody tr:nth-child(2n+1):hover { background-color: #ddd; }
-.tabela tbody tr:hover, .tabela-noesp tbody tr:hover {
+.table[class~=table-list] tbody tr:nth-child(2n+1) { background-color: #f5f5f5; }
+.table[class~=table-list] tbody tr:nth-child(2n+1):hover { background-color: #ddd; }
+.table tbody tr:hover, .table-nopad tbody tr:hover {
   background: #ddd;
   -webkit-transition: all 0.3s linear;
   -moz-transition: all 0.3s linear;
   -o-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
-.tabela[class~=tabela-bord] td, .tabela-noesp[class~=tabela-bord] td {
+.table[class~=table-bord] td, .table-nopad[class~=table-bord] td {
   border-left: 1px solid #999;
   border-right: 1px solid #999;
 }
 
-/* Sem Espaçamento */
-.tabela-noesp td {
+.table-nopad td {
   margin: 0;
   padding: 4px 8px;
   -webkit-transition: all 0.3s linear;
@@ -228,11 +233,10 @@
   -o-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
-.tabela-noesp[class~=tabela-lista] tbody tr:nth-child(2n+1) { background-color: #f5f5f5; }
-.tabela-noesp[class~=tabela-lista] tbody tr:nth-child(2n+1):hover { background-color: #ddd; }
+.table-nopad[class~=table-list] tbody tr:nth-child(2n+1) { background-color: #f5f5f5; }
+.table-nopad[class~=table-list] tbody tr:nth-child(2n+1):hover { background-color: #ddd; }
 
-/* Cartão */
-.cartao, .cartao-s {
+.card, .card-s {
   padding: 14px;
   background: #fff;
   border-top: 1px solid #ccc;
@@ -240,8 +244,7 @@
   border-right: 1px solid #ccc;
   border-bottom: 2px solid #ccc;
 }
-/* Cartão com Sombra */
-.cartao-s {
+.card-s {
   -moz-box-shadow: 0 0 3px #ccc;
   -webkit-box-shadow: 0 0 3px #ccc;
   box-shadow: 0 0 3px #ccc;
@@ -250,14 +253,13 @@
   -o-transition: all 0.2s linear;
   transition: all 0.2s linear;
 }
-.cartao-s:hover {
-  -moz-box-shadow: 0 0 16px #ccc;
-  -webkit-box-shadow: 0 0 16px #ccc;
-  box-shadow: 0 0 16px #ccc;
+.card-s:hover {
+  -moz-box-shadow: 1px 5px 16px #ccc;
+  -webkit-box-shadow: 1px 5px 16px #ccc;
+  box-shadow: 1px 5px 16px #ccc;
 }
 
-/* Bloco */
-.bloco {
+.bloc {
   padding: 14px;
   background: #eee;
   border-top: 1px solid #ccc;

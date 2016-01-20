@@ -1,23 +1,23 @@
 /* 
-  Kajado - Versão 2.1.0
-  Documentação: http://kajado.github.io/doc
-  Colabore no GitHub: https://github.com/Kajado
+  Kajado - v3.0
+  Documentation: http://kajado.github.io/doc
+  GitHub: https://github.com/Kajado
 */
 
 /*  Reset  */
 @import url("reset.css");
 
-/* Animações */
-@import url("anima.css");
+/* Anima */
+@import url("animations.css");
 
-/* Estrutura */
-@import url("estrutura.css");
+/* Structure */
+@import url("structure.css");
 
-/* Estilização */
-@import url("estilos.css");
+/* Formatting */
+@import url("formatting.css");
 
-/* Cores */
-@import url("cores.css");
+/* Colors */
+@import url("colors.css");
 
-/* Elementos */
-@import url("elementos.css");
+/* Elements */
+@import url("elements.css");

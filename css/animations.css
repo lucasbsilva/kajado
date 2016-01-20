@@ -1,36 +1,33 @@
-/* Efeito oculta */
-@keyframes oculta {
+@keyframes hide {
   from { opacity: 1; }
   to { opacity: 0; }
 }
-@-webkit-keyframes oculta {
+@-webkit-keyframes hide {
   from { opacity: 1; }
   to { opacity: 0; }
 }
-.anima-ocul, .anima-ocul-hover:hover {
-  -webkit-animation-name: oculta;
-  animation-name: oculta;
+.anima-hide, .anima-hide-hover:hover {
+  -webkit-animation-name: hide;
+  animation-name: hide;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
 
-/* Efeito exibe */
-@keyframes exibe {
+@keyframes show {
   from { opacity: 0; }
   to { opacity: 1; }
 }
-@-webkit-keyframes exibe {
+@-webkit-keyframes show {
   from { opacity: 0; }
   to { opacity: 1; }
 }
-.anima-exib, .anima-exib-hover:hover {
-  -webkit-animation-name: exibe;
-  animation-name: exibe;
+.anima-show, .anima-show-hover:hover {
+  -webkit-animation-name: show;
+  animation-name: show;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
 
-/* Efeito Flash */
 @keyframes flash {
   0% { opacity: 1; }
   50% { opacity: 0; }
@@ -48,7 +45,6 @@
   animation-fill-mode: both;
 }
 
-/* Efeito Zoom */
 @keyframes zoom {
   0% { 
     -webkit-transform: scale(0.5, 0.5);
@@ -88,7 +84,6 @@
   animation-fill-mode: both;
 }
 
-/* Efeito Zoom-out */
 @keyframes zoomout {
   0% { 
     -webkit-transform: scale(1.8, 1.8);
@@ -128,17 +123,15 @@
   animation-fill-mode: both;
 }
 
-/* Animação padrão */
 .anima {
-  -webkit-animation-name: exibe;
-  animation-name: exibe;
+  -webkit-animation-name: show;
+  animation-name: show;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-duration: .21s; 
   animation-duration: .21s;
 }
 
-/* Duração da animação */
 .anima-dura { -webkit-animation-duration: .30s; animation-duration: .30s; }
 .anima-dura1 { -webkit-animation-duration: 1s; animation-duration: 1s; }
 .anima-dura2 { -webkit-animation-duration: 2s; animation-duration: 2s; }
@@ -151,8 +144,6 @@
 .anima-dura9 { -webkit-animation-duration: 9s; animation-duration: 9s; }
 .anima-dura10 { -webkit-animation-duration: 10s; animation-duration: 10s; }
 
-/* Tempo de animação */
-.anima-repete { -webkit-animation-iteration-count: infinite; animation-iteration-count: infinite; }
 .anima-continue {
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-direction: alternate;
@@ -160,20 +151,19 @@
   animation-direction: alternate;
 }
 
-/* Inicio da animação */
-.anima-inic { -webkit-animation-delay: .30s; -ms-animation-delay: .30s; animation-delay: .30s; }
-.anima-inic1 { -webkit-animation-delay: 1s; -ms-animation-delay: 1s; animation-delay: 1s; }
-.anima-inic2 { -webkit-animation-delay: 2s; -ms-animation-delay: 2s; animation-delay: 2s; }
-.anima-inic3 { -webkit-animation-delay: 3s; -ms-animation-delay: 3s; animation-delay: 3s; }
-.anima-inic4 { -webkit-animation-delay: 4s; -ms-animation-delay: 4s; animation-delay: 4s; }
-.anima-inic5 { -webkit-animation-delay: 5s; -ms-animation-delay: 5s; animation-delay: 5s; }
-.anima-inic6 { -webkit-animation-delay: 6s; -ms-animation-delay: 6s; animation-delay: 6s; }
-.anima-inic7 { -webkit-animation-delay: 7s; -ms-animation-delay: 7s; animation-delay: 7s; }
-.anima-inic8 { -webkit-animation-delay: 8s; -ms-animation-delay: 8s; animation-delay: 8s; }
-.anima-inic9 { -webkit-animation-delay: 9s; -ms-animation-delay: 9s; animation-delay: 9s; }
-.anima-inic10 { -webkit-animation-delay: 10s; -ms-animation-delay: 10s; animation-delay: 10s; }
-.anima-inic13 { -webkit-animation-delay: 13s; -ms-animation-delay: 13s; animation-delay: 13s; }
-.anima-inic15 { -webkit-animation-delay: 15s; -ms-animation-delay: 15s; animation-delay: 15s; }
-.anima-inic18 { -webkit-animation-delay: 18s; -ms-animation-delay: 18s; animation-delay: 18s; }
-.anima-inic20 { -webkit-animation-delay: 20s; -ms-animation-delay: 20s; animation-delay: 20s; }
-.anima-inic21 { -webkit-animation-delay: 21s; -ms-animation-delay: 21s; animation-delay: 21s; }
+.anima-start { -webkit-animation-delay: .30s; -ms-animation-delay: .30s; animation-delay: .30s; }
+.anima-start1 { -webkit-animation-delay: 1s; -ms-animation-delay: 1s; animation-delay: 1s; }
+.anima-start2 { -webkit-animation-delay: 2s; -ms-animation-delay: 2s; animation-delay: 2s; }
+.anima-start3 { -webkit-animation-delay: 3s; -ms-animation-delay: 3s; animation-delay: 3s; }
+.anima-start4 { -webkit-animation-delay: 4s; -ms-animation-delay: 4s; animation-delay: 4s; }
+.anima-start5 { -webkit-animation-delay: 5s; -ms-animation-delay: 5s; animation-delay: 5s; }
+.anima-start6 { -webkit-animation-delay: 6s; -ms-animation-delay: 6s; animation-delay: 6s; }
+.anima-start7 { -webkit-animation-delay: 7s; -ms-animation-delay: 7s; animation-delay: 7s; }
+.anima-start8 { -webkit-animation-delay: 8s; -ms-animation-delay: 8s; animation-delay: 8s; }
+.anima-start9 { -webkit-animation-delay: 9s; -ms-animation-delay: 9s; animation-delay: 9s; }
+.anima-start10 { -webkit-animation-delay: 10s; -ms-animation-delay: 10s; animation-delay: 10s; }
+.anima-start13 { -webkit-animation-delay: 13s; -ms-animation-delay: 13s; animation-delay: 13s; }
+.anima-start15 { -webkit-animation-delay: 15s; -ms-animation-delay: 15s; animation-delay: 15s; }
+.anima-start18 { -webkit-animation-delay: 18s; -ms-animation-delay: 18s; animation-delay: 18s; }
+.anima-start20 { -webkit-animation-delay: 20s; -ms-animation-delay: 20s; animation-delay: 20s; }
+.anima-start21 { -webkit-animation-delay: 21s; -ms-animation-delay: 21s; animation-delay: 21s; }
