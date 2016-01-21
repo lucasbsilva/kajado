@@ -47,7 +47,27 @@ footer.fix {
   -moz-opacity: 1;
   filter: alpha(opacity=1);
 }
-
+/*
+.dropdrown:hover ul { display: block; }
+.dropdrown ul:hover { display: block; }
+.dropdrown ul {
+  display: none;
+  position: fixed;
+  float: left;
+  z-index: 999;
+  background: #fff;
+  color: #333;
+  margin-top: 7px;
+}
+.dropdrown ul li {
+  margin: 0;
+  text-decoration: none;
+  list-style-type: none;
+  cursor: pointer;
+  padding: 5px;
+  border-bottom: 1px solid #ddd;
+}
+*/
 .x-min, .x, .x-max {
   text-decoration: none;
   float: right;
@@ -350,5 +370,32 @@ footer.fix {
   border-radius: 4px;
 }
 .tooltip:hover span { display: block; }
-.tooltip .tooltip-top { margin-top: -82px; }
-.tooltip .tooltip-bot { margin-bottom: -82px; }
+.tooltip .tooltip-top { margin-top: -3%; }
+.tooltip .tooltip-bot { margin-top: 5px; }
+
+.accordion input[id*="title-"] {
+  opacity: 0;
+  position: absolute;
+}
+.accordion label {
+  padding: 12px 1%;
+  display: block;
+  width: 98%;
+  cursor: pointer;
+}
+.accordion div[class*="content-"] { display: none; }
+.accordion #title-1:checked ~ .content-1 { display: block; }
+.accordion #title-2:checked ~ .content-2 { display: block; }
+.accordion #title-3:checked ~ .content-3 { display: block; }
+.accordion #title-4:checked ~ .content-4 { display: block; }
+.accordion #title-5:checked ~ .content-5 { display: block; }
+.accordion #title-6:checked ~ .content-6 { display: block; }
+.accordion #title-7:checked ~ .content-7 { display: block; }
+.accordion #title-8:checked ~ .content-8 { display: block; }
+.accordion #title-9:checked ~ .content-9 { display: block; }
+.accordion #title-10:checked ~ .content-10 { display: block; }
+.accordion #title-11:checked ~ .content-11 { display: block; }
+.accordion #title-12:checked ~ .content-12 { display: block; }
+.accordion #title-13:checked ~ .content-13 { display: block; }
+.accordion #title-14:checked ~ .content-14 { display: block; }
+.accordion #title-15:checked ~ .content-15 { display: block; }

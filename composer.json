@@ -1,7 +1,7 @@
 {
   "name": "kajado/kajado",
   "type": "library",
-  "description": "Biblioteca CSS modular open source",
+  "description": "Modular Framework Open Source",
   "keywords": [ "css", "framework", "biblioteca", "library", "modular", "responsive", "front-end", "web" ],
   "license": "MIT",
   "homepage": "https://kajado.github.io",
