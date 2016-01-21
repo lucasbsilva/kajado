@@ -7,9 +7,10 @@ To start using Kajado, visit <http://kajado.github.io/> and get full documentati
 
 
 ### Compatibility
-* IE 8+
-* Firefox, Chrome, Safari, opera
-* Android 2.x
+* IE 9+
+* Firefox, Chrome, Safari, opera, Edge
+* Android 2.x+
+* IOS
 
 
 ### Licence
