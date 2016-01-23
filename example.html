@@ -24,7 +24,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
     -->
   </head>
-  <body>
+  <body class="pad-top-max">
     
     <div id="bg-modal" onclick="none('bg-modal'); none('modal');"></div>
     <div class="modal anima anima-show" id="modal">
@@ -37,24 +37,28 @@
       </div>'
     </div>
 
-    <header class="black">
+    <header class="fix black">
       <div class="area">
         <div class="grid">
-          <div class="w30-pad f-32">
-            Logo
+          <div class="col6-m-pad f-32">
+            Kajado <span class="hidden-mt">Example</span>
           </div>
-          <div class="w70-pad f-right">
+          <div class="col6-m-pad f-right">
             
-            <a href="#" class="bto med red">
-              <i class="fa fa-home"></i> Test
+            <a href="https://github.com/kajado/kajado" class="bto med blue-3" target="_blank">
+              <i class="fa fa-github"></i> <span class="none-mt">Github</span>
             </a>
 
-            <a href="#" class="bto med red-2">
-              <i class="fa fa-eye"></i> Test
+            <a href="https://kajado.github.io/doc" class="bto med blue-3" target="_blank">
+              <i class="fa fa-cog"></i> <span class="none-mt">Elements</span>
             </a>
             
-            <a href="#" class="bto med red-3">
-              <i class="fa fa-users"></i> Test
+            <a href="https://kajado.github.io/classes" class="bto med blue-3" target="_blank">
+              <i class="fa fa-cogs"></i> <span class="none-mt">Classes</span>
+            </a>
+            
+            <a href="https://kajado.github.io/" class="bto med blue-3" target="_blank">
+              <i class="fa fa-globe"></i> <span class="none-mt">Website</span>
             </a>
             
           </div>
@@ -62,60 +66,229 @@
       </div>
     </header>
 
-    <section class="area">
+    <div class="area">
       <div class="grid">
 
-        <div class="col3-nd-pad col12-mt-pad">
-          <ul>
-            <li class="list-circ"><a href="#" class="bto med">Menu</a></li>
-            <li class="list-disc"><a href="#" class="bto med">Menu</a></li>
-            <li class="list-squa"><a href="#" class="bto med">Menu</a></li>
+        <div class="col3-n-pad hidden-mt">
+          <ul class="posit-fix-left">
+            <li class="list-circ"><a href="#grid" class="bto med">Grid</a></li>
+            <li class="list-circ"><a href="#text" class="bto med">Text</a></li>
+            <li class="list-circ"><a href="#list" class="bto med">List</a></li>
+            <li class="list-circ"><a href="#colors" class="bto med">Colors</a></li>
+            <li class="list-circ"><a href="#tooltip" class="bto med">Tooltip</a></li>
+            <li class="list-circ"><a href="#accordion" class="bto med">Accordion</a></li>
+            <li class="list-circ"><a href="#tabs" class="bto med">Tabs</a></li>
+            <li class="list-circ"><a href="#form" class="bto med">Form</a></li>
+            <li class="list-circ"><a href="#progress" class="bto med">Progress Bar</a></li>
+            <li class="list-circ"><a href="#modal-example" class="bto med">Modal</a></li>
+            <li class="list-circ"><a href="#cards" class="bto med">Cards</a></li>
           </ul>
-          <button class="bto med blue" onclick="block('bg-modal'); block('modal');">Open Modal</button>
         </div>
 
-        <div class="col9-nd-pad col12-mt-pad">
+        <div class="col9-n-pad col12-m-pad">
 
-          <h1 class="h1">Welcome</h1>
-          <h2 class="h2">Welcome</h2>
-          <h3 class="h3">Welcome</h3>
+          <h3 id="grid">Grid</h3>
+            
+          <section class="card-shadow mar-bot-max f-center">
 
-          <article class="card-shadow text-min">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-          </article>
+            <div class="grid">
+              <div class="col3-pad grey">col3-pad</div>
+              <div class="col3-pad grey-2">col3-pad</div>
+              <div class="col3-pad grey">col3-pad</div>
+              <div class="col3-pad grey-2">col3-pad</div>
+            </div>
+            
+            <br>
 
-          <div class="pad-tb-min"><!-- space --></div>
+            <div class="grid">
+              <div class="col4-pad grey-2">col4-pad</div>
+              <div class="col4-pad grey">col4-pad</div>
+              <div class="col4-pad grey-2">col4-pad</div>
+            </div>
 
-          <article class="card-shadow text">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-          </article>
+            <br>
 
-          <div class="pad-tb-min"><!-- space --></div>
+            <div class="grid">
+              <div class="col6-pad grey-2">col6-pad</div>
+              <div class="col6-pad grey">col6-pad</div>
+            </div>
 
-          <article class="card-shadow text-max">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-          </article>
+            <br>
 
-          <div class="pad-tb-min"><!-- space --></div>
+            <div class="grid">
+              <div class="col12-pad grey">col12-pad</div>
+            </div>
 
-          <h3>Tooltip</h3>
+            <br><br>
+            <small>No Padding</small>
+            <br><br>
 
-          <article class="card">
-            <p class="tooltip">
-              <span class="tooltip-top">Tooltip yeeeeh!!!</span>
-              Tooltip-top
+            <div class="grid">
+              <div class="col3 grey">col3</div>
+              <div class="col3 grey-2">col3</div>
+              <div class="col3 grey">col3</div>
+              <div class="col3 grey-2">col3</div>
+            </div>
+            
+            <br>
+
+            <div class="grid">
+              <div class="col4 grey-2">col4</div>
+              <div class="col4 grey">col4</div>
+              <div class="col4 grey-2">col4</div>
+            </div>
+
+            <br>
+
+            <div class="grid">
+              <div class="col6 grey-2">col6</div>
+              <div class="col6 grey">col6</div>
+            </div>
+
+            <br>
+
+            <div class="grid">
+              <div class="col12 grey">col12</div>
+            </div>
+
+          </section>
+
+
+          <h3 id="text">Text</h3>
+            
+          <section class="card-shadow mar-bot-max">
+
+            <h1>H1</h1>
+            <h2>H2</h2>
+            <h3>H3</h3>
+            <br>
+            <h1 class="h1">H1</h1>
+            <h2 class="h2">H2</h2>
+            <h3 class="h3">H3</h3>
+            <br>
+            <p class="text-min">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
             </p>
-            <p class="tooltip">
-              Tooltip-bot
-              <span class="tooltip-bot">Tooltip yeeeeh!!!</span>
+
+            <p class="text f-red">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
             </p>
-          </article>
 
-          <div class="pad-tb-min"><!-- space --></div>
+            <p class="text-max f-blue-3">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+            </p>
 
-          <h3>Accordion</h3>
+          </section>
 
-          <article class="card">
+
+          <h3 id="list">List</h3>
+            
+          <section class="card-shadow mar-bot-max">
+
+            <ul>
+              <li class="list-none">list-none</li>
+              <li class="list-disc">list-disc</li>
+              <li class="list-circ">list-circ</li>
+              <li class="list-squa">list-squa</li>
+            </ul>
+            
+            <br>
+
+            <ul>
+              <li class="list-deci">list-deci</li>
+              <li class="list-deci">list-deci</li>
+              <li class="list-deci">list-deci</li>
+              <li class="list-deci">list-deci</li>
+            </ul>
+            
+            <br>
+
+            <ul>
+              <li class="list-roma">list-roma</li>
+              <li class="list-roma">list-roma</li>
+              <li class="list-roma">list-roma</li>
+              <li class="list-roma">list-roma</li>
+            </ul>
+            
+            <br>
+
+            <ul>
+              <li class="list-alph">list-alph</li>
+              <li class="list-alph">list-alph</li>
+              <li class="list-alph">list-alph</li>
+              <li class="list-alph">list-alph</li>
+            </ul>
+
+          </section>
+
+
+          <h3 id="colors">Colors</h3>
+            
+          <section class="card-shadow mar-bot-max">
+
+            <div class="grid">
+              <div class="col4-pad white">white</div>
+              <div class="col4-pad white-2">white-2</div>
+              <div class="col4-pad white-3">white-3</div>
+              <div class="col4-pad grey">grey</div>
+              <div class="col4-pad grey-2">grey-2</div>
+              <div class="col4-pad grey-3">grey-3</div>
+              <div class="col4-pad black">black</div>
+              <div class="col4-pad black-2">black-2</div>
+              <div class="col4-pad black-3">black-3</div>
+              <div class="col4-pad green">green</div>
+              <div class="col4-pad green-2">green-2</div>
+              <div class="col4-pad green-3">green-3</div>
+              <div class="col4-pad blue">blue</div>
+              <div class="col4-pad blue-2">blue-2</div>
+              <div class="col4-pad blue-3">blue-3</div>
+              <div class="col4-pad cyan">cyan</div>
+              <div class="col4-pad cyan-2">cyan-2</div>
+              <div class="col4-pad cyan-3">cyan-3</div>
+              <div class="col4-pad purple">purple</div>
+              <div class="col4-pad purple-2">purple-2</div>
+              <div class="col4-pad purple-3">purple-3</div>
+              <div class="col4-pad pink">pink</div>
+              <div class="col4-pad pink-2">pink-2</div>
+              <div class="col4-pad pink-3">pink-3</div>
+              <div class="col4-pad yellow">yellow</div>
+              <div class="col4-pad yellow-2">yellow-2</div>
+              <div class="col4-pad yellow-3">yellow-3</div>
+              <div class="col4-pad orange">orange</div>
+              <div class="col4-pad orange-2">orange-2</div>
+              <div class="col4-pad orange-3">orange-3</div>
+              <div class="col4-pad red">red</div>
+              <div class="col4-pad red-2">red-2</div>
+              <div class="col4-pad red-3">red-3</div>
+              <div class="col4-pad brown">brown</div>
+              <div class="col4-pad brown-2">brown-2</div>
+              <div class="col4-pad brown-3">brown-3</div>
+            </div>
+
+          </section>
+
+
+          <h3 id="tooltip">Tooltip</h3>
+            
+          <section class="card-shadow mar-bot-max">
+
+            <article class="pad-tb-min">
+              <p class="tooltip">
+                <span class="tooltip-top">Tooltip yeeeeh!!!</span>
+                Tooltip-top
+              </p>
+              <p class="tooltip">
+                Tooltip-bot
+                <span class="tooltip-bot">Tooltip yeeeeh!!!</span>
+              </p>
+            </article>
+
+          </section>
+
+
+          <h3 id="accordion">Accordion</h3>
+            
+          <section class="card-shadow mar-bot-max">
 
             <div class="accordion">
 
@@ -151,14 +324,13 @@
 
             </div>
 
-          </article>
+          </section>
 
-          <div class="pad-tb-min"><!-- space --></div>
 
-          <h3>Tabs</h3>
+          <h3 id="tabs">Tabs</h3>
+            
+          <section class="card-shadow mar-bot-max">
 
-          <article class="card">
-             
             <div class="tabs">
 
               <input type="radio" name="tab" id="bto-tab1" checked>
@@ -184,44 +356,93 @@
 
             </div> 
 
-          </article>
+          </section>
 
-          <div class="pad-tb-min"><!-- space --></div>
 
-          <h3>Form</h3>
-          
-          <article class="card">
+          <h3 id="form">Form</h3>
+            
+          <section class="card-shadow mar-bot-max">
             <form method="get">
-              <input type="text" name="test" placeholder="Input test" class="input">
-              <select class="select white">
-                <option>select 1</option>
-                <option>select 2</option>
-                <option>select 3</option>
-              </select>
+              <div>
+                <input type="text" name="test-input" placeholder="Input Test" class="input w40">
+                <select name="test-select" class="select white">
+                  <option value="1">select 1</option>
+                  <option value="2">select 2</option>
+                  <option value="3">select 3</option>
+                </select>
+              </div>
+              <div class="pad-top-min">
+                <textarea name="test-textarea" placeholder="Textarea Test" class="w40 textarea"></textarea>
+              </div>
             </form>
-          </article>
+          </section>
 
-          <div class="grid mar-top-max">
-            <div class="col6-d-pad col12-tn-pad col12-m-pad">
+
+          <h3 id="progress">Progress Bar</h3>
             
-              <div class="progress">
-                <div class="blue-3 gradient-effect" style="width: 78%;">Loading 78% ...</div>
-              </div>
+          <section class="card-shadow mar-bot-max">
 
+            <div class="progress">
+              <div class="red-2" style="width: 28%;">Loading 28% ...</div>
             </div>
-            <div class="col6-d-pad col12-tn-pad col12-m-pad">
             
-              <div class="progress">
-                <div class="red-3 gradient" style="width: 42%;">Loading 42% ...</div>
-              </div>
+            <br>
 
+            <div class="progress">
+              <div class="blue-3" style="width: 35%;">Loading 35% ...</div>
             </div>
+
+            <br>
+
+            <div class="progress">
+              <div class="purple-3 gradient" style="width: 53%;">Loading 53% ...</div>
+            </div>
+
+            <br>
+
+            <div class="progress">
+              <div class="orange-3 gradient" style="width: 78%;">Loading 78% ...</div>
+            </div>
+
+          </section>
+
+
+          <h3 id="modal-example">Modal</h3>
+            
+          <section class="card-shadow mar-bot-max">
+
+            <button class="bto med blue" onclick="block('bg-modal'); block('modal');">Open Modal</button>
+
+          </section>
+
+
+          <h3 id="cards">Cards</h3>
+            
+          <section class="card-shadow mar-bot-max">
+
+          <div class="grid">
+
+            <div class="col6-pad">
+              <article class="card w90">
+                <p>card</p>
+              </article>
+            </div>
+
+            <div class="col6-pad">
+              <article class="card-shadow w90">
+                <p>card-shadow</p>
+              </article>
+            </div>
+
           </div>
+
+          </section>
+
 
         </div>
 
       </div>
-    </section>
+    </div>
 
     <footer class="area mar-top bord-top-min bord-grey">
       <div class="f-center mar-tb">

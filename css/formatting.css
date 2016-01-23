@@ -487,9 +487,9 @@
 .opaci-8, .opaci-8-hover:hover { opacity: 0.8; -moz-opacity: 0.8; filter: alpha(opacity=0.8); }
 .opaci-9, .opaci-9-hover:hover { opacity: 0.9; -moz-opacity: 0.9; filter: alpha(opacity=0.9); }
 
-.sma, .sma-hover:hover { padding: 7px 13px; font-size: .7em; }
-.med, .med-hover:hover { padding: 10px 17px; }
-.big, .big-hover:hover { padding: 14px 21px; font-size: 1.5em; }
+.sma, .sma-hover:hover { padding: 5px 10px; font-size: .8em; }
+.med, .med-hover:hover { padding: 8px 14px; }
+.big, .big-hover:hover { padding: 11px 18px; font-size: 1.5em; }
 
 .round-min, .round-min-hover:hover { 
   -moz-border-radius: 4px;
@@ -623,26 +623,36 @@
 .posit-right { right: 0; }
 .posit-top { top: 0; }
 .posit-bot { bottom: 0; }
+.posit-tb { top: 0; bottom: 0; }
+.posit-lr { left: 0; right: 0; }
 
+.posit-fix-all {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
 .posit-fix-top {
   position: fixed;
   top: 0;
-  z-index: 999;
+  z-index: 995;
 }
 .posit-fix-bot {
   position: fixed;
   bottom: 0;
-  z-index: 999;
+  z-index: 995;
 }
 .posit-fix-left {
   position: fixed;
   left: 0;
-  z-index: 999;
+  z-index: 995;
 }
 .posit-fix-right {
   position: fixed;
   right: 0;
-  z-index: 999;
+  z-index: 995;
 }
 
 .float-left { float: left; }
@@ -668,8 +678,8 @@
 .cursor-progress { cursor: progress !important; }
 .cursor-help { cursor: help !important; }
 
-.hidden, .none { display: none !important; }
-.show, .block { display: block !important; }
+.hidden, .none { display: none; }
+.show, .block { display: block; }
 
 .img-color {
   -webkit-filter: grayscale(90%);
