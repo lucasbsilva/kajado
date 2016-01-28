@@ -487,9 +487,9 @@
 .opaci-8, .opaci-8-hover:hover { opacity: 0.8; -moz-opacity: 0.8; filter: alpha(opacity=0.8); }
 .opaci-9, .opaci-9-hover:hover { opacity: 0.9; -moz-opacity: 0.9; filter: alpha(opacity=0.9); }
 
-.sma, .sma-hover:hover { padding: 5px 10px; font-size: .8em; }
+.sma, .sma-hover:hover { padding: 5px 10px; font-size: .78em; }
 .med, .med-hover:hover { padding: 8px 14px; }
-.big, .big-hover:hover { padding: 11px 18px; font-size: 1.5em; }
+.big, .big-hover:hover { padding: 11px 18px; font-size: 1.1em; }
 
 .round-min, .round-min-hover:hover { 
   -moz-border-radius: 4px;
