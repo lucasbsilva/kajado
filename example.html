@@ -24,20 +24,39 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
     -->
   </head>
-  <body class="pad-top-max">
+  <body>
     
     <div id="bg-modal" onclick="none('bg-modal'); none('modal');"></div>
     <div class="modal anima anima-show" id="modal">
-  '  <div class="area-min">
+      <div class="area-min">
         <h1>Hello Word</h1>
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
         <div class="f-right">
           <button class="bto med red-2" onclick="none('bg-modal'); none('modal');"><i class="fa fa-close"></i> Close</button>
         </div>
-      </div>'
+      </div>
     </div>
 
-    <header class="fix black">
+
+
+    <div class="alert red" id="alert">
+      Alert !!!
+      <span class="x" onclick="none('alert');">X</span>
+    </div>
+
+    <div class="alert-left blue-3" id="alert-left">
+      Alert !!!
+      <span class="x" onclick="none('alert-left');">X</span>
+    </div>
+
+    <div class="alert-right green-3" id="alert-right">
+      Alert !!!
+      <span class="x" onclick="none('alert-right');">X</span>
+    </div>
+
+
+
+    <header class="black">
       <div class="area">
         <div class="grid">
           <div class="col6-m-pad f-32">
@@ -69,25 +88,30 @@
     <div class="area">
       <div class="grid">
 
-        <div class="col3-n-pad hidden-mt">
+        <div class="col3-n-pad hidden-mt overflow">
           <ul class="posit-fix-left">
             <li class="list-circ"><a href="#grid" class="bto med">Grid</a></li>
             <li class="list-circ"><a href="#text" class="bto med">Text</a></li>
             <li class="list-circ"><a href="#list" class="bto med">List</a></li>
             <li class="list-circ"><a href="#colors" class="bto med">Colors</a></li>
+            <li class="list-circ"><a href="#buttons" class="bto med">Buttons</a></li>
             <li class="list-circ"><a href="#tooltip" class="bto med">Tooltip</a></li>
             <li class="list-circ"><a href="#accordion" class="bto med">Accordion</a></li>
             <li class="list-circ"><a href="#tabs" class="bto med">Tabs</a></li>
             <li class="list-circ"><a href="#form" class="bto med">Form</a></li>
+            <li class="list-circ"><a href="#img" class="bto med">Images</a></li>
             <li class="list-circ"><a href="#progress" class="bto med">Progress Bar</a></li>
-            <li class="list-circ"><a href="#modal-example" class="bto med">Modal</a></li>
             <li class="list-circ"><a href="#cards" class="bto med">Cards</a></li>
+            <li class="list-circ"><a href="#modal-example" class="bto med">Modal</a></li>
+            <li class="list-circ"><a href="#alert" class="bto med">Alert</a></li>
           </ul>
         </div>
 
         <div class="col9-n-pad col12-m-pad">
 
           <h2 class="h2 bord-bot-min bord-grey" id="grid">Grid</h2>
+          <br>
+          <h4>Columns</h4>
             
           <section class="mar-bot-max f-center">
 
@@ -151,6 +175,72 @@
               <div class="col12 grey">col12</div>
             </div>
 
+          </section>
+
+
+          <h4>Width</h4>
+            
+          <section class="mar-bot-max f-center">
+
+            <div class="grid">
+              <div class="w20-pad grey">w20-pad</div>
+              <div class="w20-pad grey-2">w20-pad</div>
+              <div class="w20-pad grey">w20-pad</div>
+              <div class="w20-pad grey-2">w20-pad</div>
+              <div class="w20-pad grey">w20-pad</div>
+            </div>
+            
+            <br>
+
+            <div class="grid">
+              <div class="w50-pad grey-2">w50-pad</div>
+              <div class="w50-pad grey">w50-pad</div>
+            </div>
+
+            <br>
+
+            <div class="grid">
+              <div class="w100-pad grey">w100-pad</div>
+            </div>
+
+            <br><br>
+            <small>No Padding</small>
+            <br><br>
+
+            <div class="grid">
+              <div class="w20 grey">w20</div>
+              <div class="w20 grey-2">w20</div>
+              <div class="w20 grey">w20</div>
+              <div class="w20 grey-2">w20</div>
+              <div class="w20 grey">w20</div>
+            </div>
+            
+            <br>
+
+            <div class="grid">
+              <div class="w50 grey-2">w50</div>
+              <div class="w50 grey">w50</div>
+            </div>
+
+            <br>
+
+            <div class="grid">
+              <div class="w100 grey">w100</div>
+            </div>
+
+          </section>
+
+          <h4>Responsive</h4>
+
+          <section class="mar-bot-max f-center">
+            <p>Consult documentation [...]</p>
+          </section>
+
+
+          <h4>Pull, Push, Float, Offset</h4>
+
+          <section class="mar-bot-max f-center">
+            <p>Consult documentation [...]</p>
           </section>
 
 
@@ -441,19 +531,203 @@
           <h2 class="h2 bord-bot-min bord-grey" id="form">Form</h2>
             
           <section class="mar-bot-max">
-            <form method="get">
-              <div>
-                <input type="text" name="test-input" placeholder="Input Test" class="input w40">
-                <select name="test-select" class="select white">
-                  <option value="1">select 1</option>
-                  <option value="2">select 2</option>
-                  <option value="3">select 3</option>
-                </select>
-              </div>
-              <div class="pad-top-min">
-                <textarea name="test-textarea" placeholder="Textarea Test" class="w40 textarea"></textarea>
-              </div>
-            </form>
+
+            <div class="pad-min">
+              <form method="get">
+                <div>
+                  <input type="text" name="test-input" placeholder="Input Test" class="w40 input">
+                  <select name="test-select" class="select white">
+                    <option value="1">select</option>
+                    <option value="2">select 2</option>
+                    <option value="3">select 3</option>
+                  </select>
+                </div>
+                <div class="pad-top-min">
+                  <textarea name="test-textarea" placeholder="Textarea Test" class="w40 textarea"></textarea>
+                </div>
+              </form>
+            </div>
+
+            <div class="pad-min">
+              <form method="get">
+                <div>
+                  <input type="text" name="test-input" placeholder="Input Test" class="w40 input bord-min bord-red-3">
+                  <select name="test-select" class="select white bord-min bord-green-3">
+                    <option value="1">select 1</option>
+                    <option value="2">select 2</option>
+                    <option value="3">select 3</option>
+                  </select>
+                </div>
+                <div class="pad-top-min">
+                  <textarea name="test-textarea" placeholder="Textarea Test" class="w40 textarea bord-min bord-blue-3"></textarea>
+                </div>
+              </form>
+            </div>
+
+          </section>
+
+
+
+          <h2 class="h2 bord-bot-min bord-grey" id="img">Images</h2>
+            
+          <section class="mar-bot-max">
+
+            <p>
+              <img src="http://gmasson.com.br/lorem/imagem/5.jpg" class="w5">
+              <img src="http://gmasson.com.br/lorem/imagem/5.jpg" class="w10">
+              <img src="http://gmasson.com.br/lorem/imagem/5.jpg" class="w15">
+              <img src="http://gmasson.com.br/lorem/imagem/5.jpg" class="w20">
+              <img src="http://gmasson.com.br/lorem/imagem/5.jpg" class="w25">
+            </p>
+
+            <p>
+              <img src="http://gmasson.com.br/lorem/imagem/5.jpg" class="w5 round-min">
+              <img src="http://gmasson.com.br/lorem/imagem/5.jpg" class="w10 round-min">
+              <img src="http://gmasson.com.br/lorem/imagem/5.jpg" class="w15 round-min">
+              <img src="http://gmasson.com.br/lorem/imagem/5.jpg" class="w20 round-min">
+              <img src="http://gmasson.com.br/lorem/imagem/5.jpg" class="w25 round-min">
+            </p>
+
+            <p>
+              <img src="http://gmasson.com.br/lorem/imagem/5.jpg" class="w5 round">
+              <img src="http://gmasson.com.br/lorem/imagem/5.jpg" class="w10 round">
+              <img src="http://gmasson.com.br/lorem/imagem/5.jpg" class="w15 round">
+              <img src="http://gmasson.com.br/lorem/imagem/5.jpg" class="w20 round">
+              <img src="http://gmasson.com.br/lorem/imagem/5.jpg" class="w25 round">
+            </p>
+
+            <p>
+              <img src="http://gmasson.com.br/lorem/imagem/5.jpg" class="w5 round-max">
+              <img src="http://gmasson.com.br/lorem/imagem/5.jpg" class="w10 round-max">
+              <img src="http://gmasson.com.br/lorem/imagem/5.jpg" class="w15 round-max">
+              <img src="http://gmasson.com.br/lorem/imagem/5.jpg" class="w20 round-max">
+              <img src="http://gmasson.com.br/lorem/imagem/5.jpg" class="w25 round-max">
+            </p>
+
+            <p>
+              <img src="http://gmasson.com.br/lorem/imagem/5.jpg" class="w5 round-cir">
+              <img src="http://gmasson.com.br/lorem/imagem/5.jpg" class="w10 round-cir">
+              <img src="http://gmasson.com.br/lorem/imagem/5.jpg" class="w15 round-cir">
+              <img src="http://gmasson.com.br/lorem/imagem/5.jpg" class="w20 round-cir">
+              <img src="http://gmasson.com.br/lorem/imagem/5.jpg" class="w25 round-cir">
+            </p>
+
+
+            <br>
+            <p>.img-bw</p>
+            <div class="pad-min">
+              <img src="http://gmasson.com.br/lorem/imagem/5.jpg" class="w25 img-bw-min">
+              <img src="http://gmasson.com.br/lorem/imagem/5.jpg" class="w25 img-bw-min-hover">
+              &nbsp; <small>+ .img =</small>  &nbsp;
+              <img src="http://gmasson.com.br/lorem/imagem/5.jpg" class="w25 img img-bw-min">
+            </div>
+
+            <div class="pad-min">
+              <img src="http://gmasson.com.br/lorem/imagem/5.jpg" class="w25 img-bw">
+              <img src="http://gmasson.com.br/lorem/imagem/5.jpg" class="w25 img-bw-hover">
+              &nbsp; <small>+ .img =</small>  &nbsp;
+              <img src="http://gmasson.com.br/lorem/imagem/5.jpg" class="w25 img img-bw">
+            </div>
+
+            <div class="pad-min">
+              <img src="http://gmasson.com.br/lorem/imagem/5.jpg" class="w25 img-bw-max">
+              <img src="http://gmasson.com.br/lorem/imagem/5.jpg" class="w25 img-bw-max-hover">
+              &nbsp; <small>+ .img =</small>  &nbsp;
+              <img src="http://gmasson.com.br/lorem/imagem/5.jpg" class="w25 img img-bw-max">
+            </div>
+
+            <br>
+            <p>.img-sepia</p>
+            <div class="pad-min">
+              <img src="http://gmasson.com.br/lorem/imagem/5.jpg" class="w25 img-sepia-min">
+              <img src="http://gmasson.com.br/lorem/imagem/5.jpg" class="w25 img-sepia-min-hover">
+              &nbsp; <small>+ .img =</small>  &nbsp;
+              <img src="http://gmasson.com.br/lorem/imagem/5.jpg" class="w25 img img-sepia-min">
+            </div>
+
+            <div class="pad-min">
+              <img src="http://gmasson.com.br/lorem/imagem/5.jpg" class="w25 img-sepia">
+              <img src="http://gmasson.com.br/lorem/imagem/5.jpg" class="w25 img-sepia-hover">
+              &nbsp; <small>+ .img =</small>  &nbsp;
+              <img src="http://gmasson.com.br/lorem/imagem/5.jpg" class="w25 img img-sepia">
+            </div>
+
+            <div class="pad-min">
+              <img src="http://gmasson.com.br/lorem/imagem/5.jpg" class="w25 img-sepia-max">
+              <img src="http://gmasson.com.br/lorem/imagem/5.jpg" class="w25 img-sepia-max-hover">
+              &nbsp; <small>+ .img =</small>  &nbsp;
+              <img src="http://gmasson.com.br/lorem/imagem/5.jpg" class="w25 img img-sepia-max">
+            </div>
+
+            <br>
+            <p>.img-blur</p>
+            <div class="pad-min">
+              <img src="http://gmasson.com.br/lorem/imagem/5.jpg" class="w25 img-blur-min">
+              <img src="http://gmasson.com.br/lorem/imagem/5.jpg" class="w25 img-blur-min-hover">
+              &nbsp; <small>+ .img =</small>  &nbsp;
+              <img src="http://gmasson.com.br/lorem/imagem/5.jpg" class="w25 img img-blur-min">
+            </div>
+
+            <div class="pad-min">
+              <img src="http://gmasson.com.br/lorem/imagem/5.jpg" class="w25 img-blur">
+              <img src="http://gmasson.com.br/lorem/imagem/5.jpg" class="w25 img-blur-hover">
+              &nbsp; <small>+ .img =</small>  &nbsp;
+              <img src="http://gmasson.com.br/lorem/imagem/5.jpg" class="w25 img img-blur">
+            </div>
+
+            <div class="pad-min">
+              <img src="http://gmasson.com.br/lorem/imagem/5.jpg" class="w25 img-blur-max">
+              <img src="http://gmasson.com.br/lorem/imagem/5.jpg" class="w25 img-blur-max-hover">
+              &nbsp; <small>+ .img =</small>  &nbsp;
+              <img src="http://gmasson.com.br/lorem/imagem/5.jpg" class="w25 img img-blur-max">
+            </div>
+
+            <br>
+            <p>.img-sat</p>
+            <div class="pad-min">
+              <img src="http://gmasson.com.br/lorem/imagem/5.jpg" class="w25 img-sat-min">
+              <img src="http://gmasson.com.br/lorem/imagem/5.jpg" class="w25 img-sat-min-hover">
+              &nbsp; <small>+ .img =</small>  &nbsp;
+              <img src="http://gmasson.com.br/lorem/imagem/5.jpg" class="w25 img img-sat-min">
+            </div>
+
+            <div class="pad-min">
+              <img src="http://gmasson.com.br/lorem/imagem/5.jpg" class="w25 img-sat">
+              <img src="http://gmasson.com.br/lorem/imagem/5.jpg" class="w25 img-sat-hover">
+              &nbsp; <small>+ .img =</small>  &nbsp;
+              <img src="http://gmasson.com.br/lorem/imagem/5.jpg" class="w25 img img-sat">
+            </div>
+
+            <div class="pad-min">
+              <img src="http://gmasson.com.br/lorem/imagem/5.jpg" class="w25 img-sat-max">
+              <img src="http://gmasson.com.br/lorem/imagem/5.jpg" class="w25 img-sat-max-hover">
+              &nbsp; <small>+ .img =</small>  &nbsp;
+              <img src="http://gmasson.com.br/lorem/imagem/5.jpg" class="w25 img img-sat-max">
+            </div>
+
+            <br>
+            <p>.img-neg</p>
+            <div class="pad-min">
+              <img src="http://gmasson.com.br/lorem/imagem/5.jpg" class="w25 img-neg-min">
+              <img src="http://gmasson.com.br/lorem/imagem/5.jpg" class="w25 img-neg-min-hover">
+              &nbsp; <small>+ .img =</small>  &nbsp;
+              <img src="http://gmasson.com.br/lorem/imagem/5.jpg" class="w25 img img-neg-min">
+            </div>
+
+            <div class="pad-min">
+              <img src="http://gmasson.com.br/lorem/imagem/5.jpg" class="w25 img-neg">
+              <img src="http://gmasson.com.br/lorem/imagem/5.jpg" class="w25 img-neg-hover">
+              &nbsp; <small>+ .img =</small>  &nbsp;
+              <img src="http://gmasson.com.br/lorem/imagem/5.jpg" class="w25 img img-neg">
+            </div>
+
+            <div class="pad-min">
+              <img src="http://gmasson.com.br/lorem/imagem/5.jpg" class="w25 img-neg-max">
+              <img src="http://gmasson.com.br/lorem/imagem/5.jpg" class="w25 img-neg-max-hover">
+              &nbsp; <small>+ .img =</small>  &nbsp;
+              <img src="http://gmasson.com.br/lorem/imagem/5.jpg" class="w25 img img-neg-max">
+            </div>
+
           </section>
 
 
@@ -486,15 +760,6 @@
           </section>
 
 
-          <h2 class="h2 bord-bot-min bord-grey" id="modal-example">Modal</h2>
-            
-          <section class="mar-bot-max">
-
-            <button class="bto med blue" onclick="block('bg-modal'); block('modal');">Open Modal</button>
-
-          </section>
-
-
           <h2 class="h2 bord-bot-min bord-grey" id="cards">Cards</h2>
             
           <section class="mar-bot-max">
@@ -514,6 +779,28 @@
             </div>
 
           </div>
+
+          </section>
+
+
+
+          <h2 class="h2 bord-bot-min bord-grey" id="modal-example">Modal</h2>
+            
+          <section class="mar-bot-max">
+
+            <button class="bto med blue" onclick="block('bg-modal'); block('modal');">Open Modal</button>
+
+          </section>
+
+
+
+          <h2 class="h2 bord-bot-min bord-grey" id="alert">Alert</h2>
+            
+          <section class="mar-bot-max">
+
+            <button class="bto med red" onclick="block('alert');">Open Alert</button>
+            <button class="bto med blue-2" onclick="block('alert-left');">Open Alert Left</button>
+            <button class="bto med green-3" onclick="block('alert-right');">Open Alert Right</button>
 
           </section>
 

@@ -91,7 +91,7 @@ footer.fix {
   margin-left: 21px;
 }
 .x-min { font-size: 14px; }
-.x { font-size: 21px; }
+.x { font-size: 17px; }
 .x-max { font-size: 38px; }
 
 #bg-modal {
@@ -126,6 +126,7 @@ footer.fix {
   left: 0;
   right: 0;
   z-index: 999;
+  display: none;
   -webkit-transition: all 0.3s linear;
   -moz-transition: all 0.3s linear;
   -o-transition: all 0.3s linear;
@@ -140,6 +141,7 @@ footer.fix {
   position: fixed;
   bottom: 21px;
   z-index: 999;
+  display: none;
   -webkit-transition: all 0.3s linear;
   -moz-transition: all 0.3s linear;
   -o-transition: all 0.3s linear;
@@ -152,7 +154,6 @@ footer.fix {
 .alert-right { right: 19px; }
 
 .input, .textarea, .select {
-  border: 1px solid #c2c2c2;
   padding: 10px 17px;
   vertical-align: middle;
   -webkit-transition: 0.3s ease-out;
