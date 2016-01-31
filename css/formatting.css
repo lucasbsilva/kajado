@@ -407,6 +407,18 @@
 .f-72, .f-72-hover:hover { font-size: 72px; }
 .f-80, .f-80-hover:hover { font-size: 80px; }
 
+.f-05em, .f-05em-hover:hover { font-size: 0.5em; }
+.f-1em, .f-1em-hover:hover { font-size: 1em; }
+.f-15em, .f-15em-hover:hover { font-size: 1.5em; }
+.f-2em, .f-2em-hover:hover { font-size: 2em; }
+.f-25em, .f-25em-hover:hover { font-size: 2.5em; }
+.f-3em, .f-3em-hover:hover { font-size: 3em; }
+.f-35em, .f-35em-hover:hover { font-size: 3.5em; }
+.f-4em, .f-4em-hover:hover { font-size: 4em; }
+.f-45em, .f-45em-hover:hover { font-size: 4.5em; }
+.f-5em, .f-5em-hover:hover { font-size: 5em; }
+.f-55em, .f-55em-hover:hover { font-size: 5.5em; }
+
 .f-h6, .f-h6-hover:hover { line-height: 6px; }
 .f-h7, .f-h7-hover:hover { line-height: 7px; }
 .f-h8, .f-h8-hover:hover { line-height: 8px; }
