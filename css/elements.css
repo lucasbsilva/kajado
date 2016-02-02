@@ -25,14 +25,14 @@ footer.fix {
   filter: alpha(opacity=0.50);
 }
 
-.bto, .bto-shadow {
+.bto {
   text-decoration: none;
   display: inline-block;
   box-sizing: border-box;
   list-style-type: none;
   cursor: pointer;
 }
-.bto:hover, .bto-shadow:hover {
+.bto:hover {
   opacity: 0.92;
   -moz-opacity: 0.92;
   filter: alpha(opacity=92);
@@ -41,20 +41,7 @@ footer.fix {
   -o-transition: all 0.1s linear;
   transition: all 0.1s linear;
 }
-.bto-shadow {
-  -moz-box-shadow: 0 0 3px #ccc;
-  -webkit-box-shadow: 0 0 3px #ccc;
-  box-shadow: 0 0 3px #ccc;
-  -webkit-transition: all 0.2s linear;
-  -moz-transition: all 0.2s linear;
-  -o-transition: all 0.2s linear;
-  transition: all 0.2s linear;
-}
-.bto-shadow:hover {
-  -moz-box-shadow: 1px 5px 13px #ccc;
-  -webkit-box-shadow: 1px 5px 13px #ccc;
-  box-shadow: 1px 5px 13px #ccc;
-}
+
 /*
 .dropdrown:hover ul { display: block; }
 .dropdrown ul:hover { display: block; }
@@ -197,18 +184,16 @@ footer.fix {
 .text-min {
   font-size: 1.1em;
   line-height: 1.25em;
-  text-align: justify;
 }
 .text {
   font-size: 1.2em;
   line-height: 1.36em;
-  text-align: justify;
 }
 .text-max {
   font-size: 1.3em;
   line-height: 1.47em;
-  text-align: justify;
 }
+.just { text-align: justify; }
 
 .table, .table-nopad {
   margin: 1px;

@@ -407,18 +407,6 @@
 .f-72, .f-72-hover:hover { font-size: 72px; }
 .f-80, .f-80-hover:hover { font-size: 80px; }
 
-.f-05em, .f-05em-hover:hover { font-size: 0.5em; }
-.f-1em, .f-1em-hover:hover { font-size: 1em; }
-.f-15em, .f-15em-hover:hover { font-size: 1.5em; }
-.f-2em, .f-2em-hover:hover { font-size: 2em; }
-.f-25em, .f-25em-hover:hover { font-size: 2.5em; }
-.f-3em, .f-3em-hover:hover { font-size: 3em; }
-.f-35em, .f-35em-hover:hover { font-size: 3.5em; }
-.f-4em, .f-4em-hover:hover { font-size: 4em; }
-.f-45em, .f-45em-hover:hover { font-size: 4.5em; }
-.f-5em, .f-5em-hover:hover { font-size: 5em; }
-.f-55em, .f-55em-hover:hover { font-size: 5.5em; }
-
 .f-h6, .f-h6-hover:hover { line-height: 6px; }
 .f-h7, .f-h7-hover:hover { line-height: 7px; }
 .f-h8, .f-h8-hover:hover { line-height: 8px; }
@@ -462,16 +450,75 @@
 .f-h72, .f-h72-hover:hover { line-height: 72px; }
 .f-h80, .f-h80-hover:hover { line-height: 80px; }
 
+.f-05em, .f-05em-hover:hover { font-size: 0.5em; }
+.f-06em, .f-06em-hover:hover { font-size: 0.6em; }
+.f-07em, .f-07em-hover:hover { font-size: 0.7em; }
+.f-08em, .f-08em-hover:hover { font-size: 0.8em; }
+.f-09em, .f-09em-hover:hover { font-size: 0.9em; }
+.f-1em, .f-1em-hover:hover { font-size: 1em; }
+.f-11em, .f-11em-hover:hover { font-size: 1.1em; }
+.f-12em, .f-12em-hover:hover { font-size: 1.2em; }
+.f-13em, .f-13em-hover:hover { font-size: 1.3em; }
+.f-14em, .f-14em-hover:hover { font-size: 1.4em; }
+.f-15em, .f-15em-hover:hover { font-size: 1.5em; }
+.f-16em, .f-16em-hover:hover { font-size: 1.6em; }
+.f-17em, .f-17em-hover:hover { font-size: 1.7em; }
+.f-18em, .f-18em-hover:hover { font-size: 1.8em; }
+.f-19em, .f-19em-hover:hover { font-size: 1.9em; }
+.f-2em, .f-2em-hover:hover { font-size: 2em; }
+.f-25em, .f-25em-hover:hover { font-size: 2.5em; }
+.f-3em, .f-3em-hover:hover { font-size: 3em; }
+.f-35em, .f-35em-hover:hover { font-size: 3.5em; }
+.f-4em, .f-4em-hover:hover { font-size: 4em; }
+.f-45em, .f-45em-hover:hover { font-size: 4.5em; }
+.f-5em, .f-5em-hover:hover { font-size: 5em; }
+.f-55em, .f-55em-hover:hover { font-size: 5.5em; }
+
+.f-h05em, .f-h05em-hover:hover { line-height: 0.5em; }
+.f-h06em, .f-h06em-hover:hover { line-height: 0.6em; }
+.f-h07em, .f-h07em-hover:hover { line-height: 0.7em; }
+.f-h08em, .f-h08em-hover:hover { line-height: 0.8em; }
+.f-h09em, .f-h09em-hover:hover { line-height: 0.9em; }
+.f-h1em, .f-h1em-hover:hover { line-height: 1em; }
+.f-h11em, .f-h11em-hover:hover { line-height: 1.1em; }
+.f-h12em, .f-h12em-hover:hover { line-height: 1.2em; }
+.f-h13em, .f-h13em-hover:hover { line-height: 1.3em; }
+.f-h14em, .f-h14em-hover:hover { line-height: 1.4em; }
+.f-h15em, .f-h15em-hover:hover { line-height: 1.5em; }
+.f-h16em, .f-h16em-hover:hover { line-height: 1.6em; }
+.f-h17em, .f-h17em-hover:hover { line-height: 1.7em; }
+.f-h18em, .f-h18em-hover:hover { line-height: 1.8em; }
+.f-h19em, .f-h19em-hover:hover { line-height: 1.9em; }
+.f-h2em, .f-h2em-hover:hover { line-height: 2em; }
+.f-h25em, .f-h25em-hover:hover { line-height: 2.5em; }
+.f-h3em, .f-h3em-hover:hover { line-height: 3em; }
+.f-h35em, .f-h35em-hover:hover { line-height: 3.5em; }
+.f-h4em, .f-h4em-hover:hover { line-height: 4em; }
+.f-h45em, .f-h45em-hover:hover { line-height: 4.5em; }
+.f-h5em, .f-h5em-hover:hover { line-height: 5em; }
+.f-h55em, .f-h55em-hover:hover { line-height: 5.5em; }
+
 .f-neg, .f-neg-hover:hover { font-weight: bold; }
 .f-ita, .f-ita-hover:hover { font-style: italic; }
 .f-obl, .f-obl-hover:hover { font-style: oblique; }
 
+.f-cent, .f-cent-hover:hover,
 .f-center, .f-center-hover:hover { text-align: center; }
+
 .f-left, .f-left-hover:hover { text-align: left; }
-.f-right, .f-right-hover:hover { text-align: right; }
-.f-justify, .f-justify-hover:hover { text-align: justify; }
+
+.f-right, .f-right-hover:hover,
+.f-righ, .f-righ-hover:hover { text-align: right; }
+
+.f-justify, .f-justify-hover:hover,
+.f-just, .f-just-hover:hover { text-align: justify; }
+
 .f-top, .f-top-hover:hover { vertical-align: top; }
-.f-middle, .f-middle-hover:hover { vertical-align: middle; }
+
+.f-middle, .f-middle-hover:hover,
+.f-mid, .f-mid-hover:hover { vertical-align: middle; }
+
+.f-bottom, .f-bottom-hover:hover,
 .f-bot, .f-bot-hover:hover { vertical-align: bottom; }
 
 .f-none, .f-none-hover:hover { text-decoration: none; }
@@ -499,9 +546,9 @@
 .opaci-8, .opaci-8-hover:hover { opacity: 0.8; -moz-opacity: 0.8; filter: alpha(opacity=0.8); }
 .opaci-9, .opaci-9-hover:hover { opacity: 0.9; -moz-opacity: 0.9; filter: alpha(opacity=0.9); }
 
-.sma, .sma-hover:hover { padding: 6px 10px; font-size: .78em; }
-.med, .med-hover:hover { padding: 9px 16px; }
-.big, .big-hover:hover { padding: 13px 21px; font-size: 1.12em; }
+.sma, .sma-hover:hover { padding: 0.375em 0.625em; font-size: .78em; }
+.med, .med-hover:hover { padding: 0.563em 1.000em; }
+.big, .big-hover:hover { padding: 0.813em 1.313em; font-size: 1.12em; }
 
 .round-min, .round-min-hover:hover { 
   -moz-border-radius: 4px;
