@@ -1,5 +1,5 @@
 # Kajado CSS v3.0
-Every project is unique and the **Kajado** you have total freedom to customize the components, not getting stuck with ready designs.
+Every project is unique and **Kajado** provides total freedom to customize its components, not letting you get stuck with ready designs.
 
 
 ### Starting
@@ -8,11 +8,10 @@ To start using Kajado, visit <http://kajado.github.io/> and get full documentati
 
 ### Compatibility
 * IE 9+
-* Firefox, Chrome, Safari, opera, Edge
+* Firefox, Chrome, Safari, Opera, Edge
 * Android 2.x+
-* IOS
+* iOS
 
 
-### Licence
-You can use for personal and commercial purposes, modify and improve. [Read the full license](https://github.com/kajado/kajado/blob/master/LICENSE)
-
+### License
+You can use for personal and commercial purposes, modify and improve. [Read the full license here](https://github.com/kajado/kajado/blob/master/LICENSE).
